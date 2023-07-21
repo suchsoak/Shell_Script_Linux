@@ -22,10 +22,6 @@ This script is under development
 ```sh
   bash ./scritp.sh
 ```
-
-# Arch Linux
-> Coming soon
-
 #
 
 | Downloads |  Links |
