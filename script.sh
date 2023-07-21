@@ -2,11 +2,11 @@
 # [[ "$OSTYPE" == "linux-gnu"*
 
 
-if [ "GNU/Linux" ]; then
+if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(OSTYPE)" == "linux-gnu" ] || [ "GNU/Linux" ]; then
 
 
 echo
-echo "\e[31m-------------------------| PING | -------------------------\e[0m"
+echo -e "\e[31m-------------------------| PING | -------------------------\e[0m"
 echo
 
     if ping -c 3 www.google.com; then
@@ -35,7 +35,7 @@ sleep 2 > /dev/null
 clear
 
 echo
-echo "\e[35m-------------------------| UPDATE | -------------------------\e[0m"
+echo -e "\e[35m-------------------------| UPDATE | -------------------------\e[0m"
 echo
 
 sudo apt update -y
@@ -58,7 +58,7 @@ sleep 4 > /dev/null
 clear
 
 echo
-echo "\e[90m------------------------- | Python, ruby, C, nodejs... | -------------------------\e[0m"
+echo -e "\e[90m------------------------- | Python, ruby, C, nodejs... | -------------------------\e[0m"
 echo
 
 sleep 5 > /dev/null
@@ -69,7 +69,7 @@ sudo apt install ruby lua5.3 python3 python3-pip nodejs -y
 clear
 
 echo
-echo "\e[34m------------------------- VISUAL CODE STUDIO -------------------------"
+echo -e "\e[34m------------------------- VISUAL CODE STUDIO -------------------------"
 echo
 sleep 3 > /dev/null
 
@@ -81,14 +81,14 @@ sudo apt-get install code -y
 clear
 
 echo
-echo "\e[34m------------------------- | VISUAL_STUDIO_CODE | -------------------------\e[0m"
+echo -e "\e[34m------------------------- | VISUAL_STUDIO_CODE | -------------------------\e[0m"
 echo
 sleep 3 > /dev/null
 
 clear
 
 echo
-echo "\e[33m------------------------- BRAVE BROWSER -------------------------"
+echo -e "\e[33m------------------------- BRAVE BROWSER -------------------------"
 echo
 
 sudo apt install curl -y
@@ -100,7 +100,7 @@ sudo apt install brave-browser -y
 clear
 
 echo
-echo "\e[34m------------------------- | BRAVE_BROWSER | -------------------------\e[0m"
+echo -e "\e[34m------------------------- | BRAVE_BROWSER | -------------------------\e[0m"
 echo
 
 
