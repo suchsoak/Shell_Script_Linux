@@ -4,35 +4,6 @@
 
 if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(OSTYPE)" == "linux-gnu"]; then
 
-
-echo
-echo "-------------------------| PING | -------------------------"
-echo
-
-if ping -c 2 $HOST; then
-
-else
-    echo "Internet not connected"
-fi
-
-sleep 3 > /dev/null
-
-clear
-
-echo
-echo "-------------------------| DISK | -------------------------"
-echo
-
-if sudo fsck /dev/sda; then
-
-else
-    echo "DISK ERROR"
-fi
-
-sleep 2 > /dev/null
-
-clear
-
 echo
 echo "-------------------------| UPDATE | -------------------------"
 echo
