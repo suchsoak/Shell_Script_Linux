@@ -1,9 +1,12 @@
 #!/bin/bash/
 # [[ "$OSTYPE" == "linux-gnu"*
 
+echo
+echo -e "\e[31m-------------------------| Github: https://github.com/suchsoak | -------------------------\e[0m"
+echo
 
-if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(OSTYPE)" == "linux-gnu" ] || [ "GNU/Linux" ]; then
 
+if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(OSTYPE)" == "linux-gnu" ] || [ "GNU/Linux" ]; then+
 
 echo
 echo -e "\e[31m-------------------------| PING | -------------------------\e[0m"
@@ -20,10 +23,10 @@ sleep 3 > /dev/null
 clear
 
 echo
-echo "-------------------------| DISK | -------------------------"
+echo "\e[31m-------------------------| DISK | -------------------------\e[0m"
 echo
 
-    if sudo fsck /dev/sda; then
+    if sudo fsck -A /dev/sda; then
     echo
     echo
     else
@@ -43,7 +46,7 @@ sleep 5 > /dev/null
 clear
 
 echo
-echo "------------------------- | curl,wget,git,vim,net-tools,neofetch |-------------------------"
+echo -e "\e[90m------------------------- | curl,wget,git,vim,net-tools,neofetch |-------------------------\e[0m"
 echo
 
 sleep 4 > /dev/null
@@ -100,7 +103,7 @@ sudo apt install brave-browser -y
 clear
 
 echo
-echo -e "\e[34m------------------------- | BRAVE_BROWSER | -------------------------\e[0m"
+echo -e "\e[33m------------------------- | BRAVE_BROWSER | -------------------------\e[0m"
 echo
 
 
