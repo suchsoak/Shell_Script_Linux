@@ -2,14 +2,44 @@
 # [[ "$OSTYPE" == "linux-gnu"*
 
 
-if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(OSTYPE)" == "linux-gnu"]; then
+if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(OSTYPE)" == "linux-gnu" ] || [ "GNU/Linux" ]; then
+
 
 echo
-echo "-------------------------| UPDATE | -------------------------"
+echo "\e[31m-------------------------| PING | -------------------------\e[0m"
+echo
+
+    if ping -c 3 www.google.com; then
+    echo
+    else
+        echo "Internet not connected"
+    fi
+
+sleep 3 > /dev/null
+
+clear
+
+echo
+echo "-------------------------| DISK | -------------------------"
+echo
+
+    if sudo fsck /dev/sda; then
+    echo
+    echo
+    else
+        echo "DISK ERROR"
+    fi
+
+sleep 2 > /dev/null
+
+clear
+
+echo
+echo "\e[35m-------------------------| UPDATE | -------------------------\e[0m"
 echo
 
 sudo apt update -y
-sleep 2 > /dev/null
+sleep 5 > /dev/null
 clear
 
 echo
@@ -19,7 +49,8 @@ echo
 sleep 4 > /dev/null
 
 sudo apt install curl wget git vim make net-tools neofetch inxi -y
-
+echo
+echo
 neofetch
 
 sleep 4 > /dev/null
@@ -27,7 +58,7 @@ sleep 4 > /dev/null
 clear
 
 echo
-echo "------------------------- | Python, ruby, C, nodejs... | -------------------------"
+echo "\e[90m------------------------- | Python, ruby, C, nodejs... | -------------------------\e[0m"
 echo
 
 sleep 5 > /dev/null
@@ -38,7 +69,7 @@ sudo apt install ruby lua5.3 python3 python3-pip nodejs -y
 clear
 
 echo
-echo "------------------------- VISUAL CODE STUDIO -------------------------"
+echo "\e[34m------------------------- VISUAL CODE STUDIO -------------------------"
 echo
 sleep 3 > /dev/null
 
@@ -50,14 +81,14 @@ sudo apt-get install code -y
 clear
 
 echo
-echo "------------------------- | VISUAL_STUDIO_CODE | -------------------------"
+echo "\e[34m------------------------- | VISUAL_STUDIO_CODE | -------------------------\e[0m"
 echo
 sleep 3 > /dev/null
 
 clear
 
 echo
-echo "------------------------- BRAVE BROWSER -------------------------"
+echo "\e[33m------------------------- BRAVE BROWSER -------------------------"
 echo
 
 sudo apt install curl -y
@@ -69,7 +100,7 @@ sudo apt install brave-browser -y
 clear
 
 echo
-echo "------------------------- | BRAVE_BROWSER | -------------------------"
+echo "\e[34m------------------------- | BRAVE_BROWSER | -------------------------\e[0m"
 echo
 
 
