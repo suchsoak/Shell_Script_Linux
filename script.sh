@@ -2,7 +2,7 @@
 # [[ "$OSTYPE" == "linux-gnu"*
 
 
-if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(OSTYPE)" == "linux-gnu" ] || [ "GNU/Linux" ]; then
+if [ "GNU/Linux" ]; then
 
 
 echo
