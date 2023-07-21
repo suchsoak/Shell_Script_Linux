@@ -4,7 +4,9 @@
 echo
 echo -e "\e[31m-------------------------| Github: https://github.com/suchsoak | -------------------------\e[0m"
 echo
+sleep 7 > /dev/null
 
+clear
 
 if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(OSTYPE)" == "linux-gnu" ] || [ "GNU/Linux" ]; then+
 
