@@ -64,7 +64,7 @@ echo
 
 sleep 4 > /dev/null
 
-sudo apt install curl wget git vim make net-tools neofetch inxi -y
+sudo apt install curl wget git vim make net-tools neofetch inxi git -y
 echo
 echo
 neofetch
@@ -160,7 +160,7 @@ clear
     sleep 5 > /dev/null
 
     sudo pacman -Sy build-essential --noconfirm
-    sudo pacman -Sy ruby lua5.3 python3 python3-pip nodejs gcc g++ --noconfirm
+    sudo pacman -Sy ruby lua5.3 python3 python3-pip nodejs gcc g++ git --noconfirm
 
     clear
 
