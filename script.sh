@@ -191,7 +191,7 @@ clear
 
     sleep 4 > /dev/null
 
-    makepkg -si
+    makepkg -si --noconfirm
     yay -S brave-bin
     yay -S brave-beta-bin
     yay -S brave-nightly-bin
