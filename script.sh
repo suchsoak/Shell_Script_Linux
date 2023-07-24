@@ -67,6 +67,7 @@ sleep 4 > /dev/null
 sudo apt install curl wget git vim make net-tools wireless_tools xdg-utils openssh neofetch inxi git smartmontools -y
 echo
 echo
+
 neofetch
 
 sleep 4 > /dev/null
@@ -79,6 +80,8 @@ echo
 
 sleep 5 > /dev/null
 
+clear
+
 echo
 echo -e "\e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
 echo  
@@ -86,6 +89,8 @@ echo
 sleep 4 > /dev/null
 
 sudo apt-get install build-essential gcc g++ -y
+
+clear
 
 sleep 3 > /dev/null
 
@@ -105,15 +110,13 @@ echo
 
 sleep 3 > /dev/null
 
-clear
-
 sudo apt install python3 python-pip  -y
+
+clear
 
 echo
 echo -e "\e[31m-------------------------| Ruby | -------------------------\e[0m"
 echo
-
-clear
 
 sleep 3 > /dev/null
 
@@ -126,19 +129,13 @@ clear
 echo
 echo -e "\e[34m------------------------- VISUAL CODE STUDIO -------------------------"
 echo
+
 sleep 3 > /dev/null
 
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt-get update -y
 sudo apt-get install code -y
-
-clear
-
-echo
-echo -e "\e[34m------------------------- | VISUAL_STUDIO_CODE | -------------------------\e[0m"
-echo
-sleep 3 > /dev/null
 
 clear
 
@@ -151,15 +148,6 @@ sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://b
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update -y
 sudo apt install brave-browser -y
-
-clear
-
-echo
-echo -e "\e[33m------------------------- | BRAVE_BROWSER | -------------------------\e[0m"
-echo
-
-
-sleep 3 > /dev/null
 
 clear
 
@@ -191,6 +179,12 @@ clear
     echo
 
     sudo pacman -Sy curl wget git vim make net-tools wireless_tools xdg-utils openssh neofetch inxi git smartmontools --noconfirm
+    echo
+    echo
+    
+    neofetch
+
+    sleep 6 > /dev/null
 
     clear
     
@@ -198,17 +192,22 @@ clear
     echo -e "\e[90m------------------------- | Programming language | -------------------------\e[0m"
     echo
 
+    clear
+
     sleep 5 > /dev/null
 
     echo
     echo -e "\e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
     echo  
 
+
     sleep 4 > /dev/null
 
     sudo pacman -S gcc g++ --noconfirm
 
     sleep 4 > /dev/null
+
+    clear
 
     echo
     echo -e "\e[32m------------------------- | Nodejs |-------------------------\e[0m"
@@ -218,8 +217,10 @@ clear
 
     sleep 4 > /dev/null
 
+    clear
+
     echo
-    echo -e "\e[90m------------------------- | Lua | -------------------------\e[0m"
+    echo -e "\e[35m------------------------- | Lua | -------------------------\e[0m"
     echo
 
     sleep 4 > /dev/null
@@ -227,6 +228,8 @@ clear
     sudo pacman -S lua --noconfirm
 
     sleep 4 > /dev/null
+
+    clear
 
     echo
     echo -e "\e[34m------------------------- | Python | -------------------------\e[0m"
@@ -263,15 +266,10 @@ clear
     clear
 
     echo
-    echo -e "\e[34m------------------------- | VISUAL_STUDIO_CODE | -------------------------\e[0m"
-    echo
-    sleep 3 > /dev/null
-
-    clear
-
-    echo
     echo -e "\e[33m------------------------- BRAVE BROWSER -------------------------"
     echo
+
+    sleep 3 > /dev/null
 
     sudo pacman -S git --noconfirm
     git clone https://aur.archlinux.org/yay.git
@@ -284,10 +282,6 @@ clear
     yay -S brave-beta-bin --noconfirm
     yay -S brave-nightly-bin --noconfirm
     yay -Sy --noconfirm
-
-    echo
-    echo -e "\e[33m------------------------- | BRAVE_BROWSER | -------------------------\e[0m"
-    echo
 
 else
     echo "Operating system not supported by this script."
