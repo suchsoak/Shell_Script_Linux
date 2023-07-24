@@ -74,13 +74,52 @@ sleep 4 > /dev/null
 clear
 
 echo
-echo -e "\e[90m------------------------- | Python, ruby, C, nodejs... | -------------------------\e[0m"
+echo -e "\e[90m------------------------- | Programming language | -------------------------\e[0m"
 echo
 
 sleep 5 > /dev/null
 
-sudo apt-get install build-essential -y
-sudo apt install ruby lua5.3 python3 python3-pip nodejs -y
+echo
+echo -e "\e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
+echo  
+
+sleep 4 > /dev/null
+
+sudo apt-get install build-essential gcc g++ -y
+
+sleep 3 > /dev/null
+
+echo
+echo -e "\e[32m------------------------- | Nodejs |-------------------------\e[0m"
+echo
+
+sleep 3 > /dev/null
+
+sudo apt install nodejs -y
+
+clear
+
+echo
+echo -e "\e[34m------------------------- | Python | -------------------------\e[0m"
+echo
+
+sleep 3 > /dev/null
+
+clear
+
+sudo apt install python3 python-pip  -y
+
+echo
+echo -e "\e[31m-------------------------| Ruby | -------------------------\e[0m"
+echo
+
+clear
+
+sleep 3 > /dev/null
+
+sudo apt install ruby -y
+
+sleep 3 > /dev/null
 
 clear
 
@@ -128,6 +167,7 @@ clear
     echo
     echo -e "\e[31m-------------------------| PING | -------------------------\e[0m"
     echo
+    echo
 
         if ping -c 3 www.google.com; then
         echo
@@ -162,9 +202,13 @@ clear
 
     echo
     echo -e "\e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
-    echo
+    echo  
+
+    sleep 4 > /dev/null
 
     sudo pacman -S gcc g++ --noconfirm
+
+    sleep 4 > /dev/null
 
     echo
     echo -e "\e[32m------------------------- | Nodejs |-------------------------\e[0m"
@@ -172,11 +216,17 @@ clear
 
     sudo pacman -S nodejs --noconfirm
 
+    sleep 4 > /dev/null
+
     echo
     echo -e "\e[90m------------------------- | Lua | -------------------------\e[0m"
     echo
 
+    sleep 4 > /dev/null
+
     sudo pacman -S lua --noconfirm
+
+    sleep 4 > /dev/null
 
     echo
     echo -e "\e[34m------------------------- | Python | -------------------------\e[0m"
@@ -187,6 +237,8 @@ clear
     clear
 
     sudo pacman -S python3 python-pip --noconfirm
+
+    sleep 4 > /dev/null
 
     echo
     echo -e "\e[31m-------------------------| Ruby | -------------------------\e[0m"
