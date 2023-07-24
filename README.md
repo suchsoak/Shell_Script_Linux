@@ -3,7 +3,7 @@ This is a shell script for you to have everything when formatting your linux
 
 This script is under development
 
-# Ubuntu | Debian | Arch
+# Ubuntu | Debian | Arch | Kali | Linux Mint
 
 ## Install
 
