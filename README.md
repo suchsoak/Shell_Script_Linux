@@ -16,11 +16,11 @@ This script is under development
 ## Use
 
 ```sh
-  chmod +x scritp.sh
+  chmod +x script.sh
 ```
 
 ```sh
-  bash ./scritp.sh
+  bash ./script.sh
 ```
 #
 
