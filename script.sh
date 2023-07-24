@@ -157,18 +157,31 @@ clear
     echo
     echo -e "\e[90m------------------------- | Programming language | -------------------------\e[0m"
     echo
+
     sleep 5 > /dev/null
 
-    sudo pacman -Sy build-essential --noconfirm
+    echo
+    echo -e "\e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
+    echo
 
-    sudo pacman -S lua nodejs gcc g++ git --noconfirm
+    sudo pacman -S gcc g++ --noconfirm
+
+    echo
+    echo -e "\e[32m------------------------- | Nodejs |-------------------------\e[0m"
+    echo
+
+    sudo pacman -S nodejs --noconfirm
+
+    echo
+    echo -e "\e[90m------------------------- | Lua | -------------------------\e[0m"
+    echo
 
     sudo pacman -S lua --noconfirm
 
     echo
     echo -e "\e[34m------------------------- | Python | -------------------------\e[0m"
     echo
-    
+
     sleep 3 > /dev/null
 
     clear
