@@ -181,7 +181,7 @@ clear
     sudo pacman -Sy curl wget git vim make net-tools wireless_tools xdg-utils openssh neofetch inxi git smartmontools --noconfirm
     echo
     echo
-    
+
     neofetch
 
     sleep 6 > /dev/null
@@ -191,8 +191,6 @@ clear
     echo
     echo -e "\e[90m------------------------- | Programming language | -------------------------\e[0m"
     echo
-
-    clear
 
     sleep 5 > /dev/null
 
