@@ -59,12 +59,12 @@ sleep 5 > /dev/null
 clear
 
 echo
-echo -e "\e[90m------------------------- | curl,wget,git,vim,net-tools,neofetch |-------------------------\e[0m"
+echo -e "\e[90m------------------------- | PACKAGES |-------------------------\e[0m"
 echo
 
 sleep 4 > /dev/null
 
-sudo apt install curl wget git vim make net-tools neofetch inxi git -y
+sudo apt install curl wget git vim make net-tools wireless_tools xdg-utils openssh neofetch inxi git smartmontools -y
 echo
 echo
 neofetch
@@ -147,10 +147,10 @@ clear
     clear
 
     echo
-    echo -e "\e[90m------------------------- | curl,wget,git,vim,net-tools,neofetch |-------------------------\e[0m"
+    echo -e "\e[90m------------------------- | PACKAGES |-------------------------\e[0m"
     echo
 
-    sudo pacman -Sy curl wget git vim make net-tools --noconfirm
+    sudo pacman -Sy curl wget git vim make net-tools wireless_tools xdg-utils openssh neofetch inxi git smartmontools --noconfirm
 
     clear
     
