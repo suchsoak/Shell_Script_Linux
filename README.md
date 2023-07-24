@@ -33,14 +33,17 @@ This script is under development
 |  Lua | https://www.lua.org/download.html
 |  nodejs | https://nodejs.org/en
 
-# Packages
+# Packages | Programming language 
 
-```sh
-  curl
-  wget
-  git
-  vim
-  net-tools
-  neofetch
-  inxi
+```sh              | Python
+  curl             | Ruby
+  wget             | Lua
+  git              | gcc 
+  vim              | g++
+  net-tools        | Nodejs
+  neofetch         | 
+  inxi             |
+  smartmontools    |
+  wireless_tools   |
+   xdg-utils       |
 ```
