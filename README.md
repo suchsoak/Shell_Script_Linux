@@ -3,6 +3,8 @@ This is a shell script for you to have everything when formatting your linux
 
 This script is under development
 
+Before starting script recommended to update the system before
+
 # Ubuntu | Debian | Arch | Kali | Linux Mint
 
 ## Install
