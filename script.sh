@@ -155,12 +155,35 @@ clear
     clear
     
     echo
-    echo -e "\e[90m------------------------- | Python, ruby, C, nodejs... | -------------------------\e[0m"
+    echo -e "\e[90m------------------------- | Programming language | -------------------------\e[0m"
     echo
     sleep 5 > /dev/null
 
     sudo pacman -Sy build-essential --noconfirm
-    sudo pacman -Sy ruby lua5.3 python3 python3-pip nodejs gcc g++ git --noconfirm
+
+    sudo pacman -S lua nodejs gcc g++ git --noconfirm
+
+    sudo pacman -S lua --noconfirm
+
+    echo
+    echo -e "\e[34m------------------------- | Python | -------------------------\e[0m"
+    echo
+    
+    sleep 3 > /dev/null
+
+    clear
+
+    sudo pacman -S python3 python-pip --noconfirm
+
+    echo
+    echo -e "\e[31m-------------------------| Ruby | -------------------------\e[0m"
+    echo
+
+    sleep 3 > /dev/null
+
+    sudo pacman -S ruby  --noconfirm
+
+    sudo pacman -Sy --noconfirm
 
     clear
 
@@ -192,9 +215,10 @@ clear
     sleep 4 > /dev/null
 
     makepkg -si --noconfirm
-    yay -S brave-bin
-    yay -S brave-beta-bin
-    yay -S brave-nightly-bin
+    yay -S brave-bin --noconfirm
+    yay -S brave-beta-bin --noconfirm
+    yay -S brave-nightly-bin --noconfirm
+    yay -Sy --noconfirm
 
     echo
     echo -e "\e[33m------------------------- | BRAVE_BROWSER | -------------------------\e[0m"
