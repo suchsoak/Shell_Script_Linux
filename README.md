@@ -41,9 +41,9 @@ This script is under development
   git              | gcc 
   vim              | g++
   net-tools        | Nodejs
-  neofetch         | 
-  inxi             |
-  smartmontools    |
-  wireless_tools   |
-   xdg-utils       |
+  neofetch         
+  inxi             
+  smartmontools    
+  wireless_tools   
+  xdg-utils       
 ```
