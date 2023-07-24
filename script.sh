@@ -64,9 +64,11 @@ echo
 
 sleep 4 > /dev/null
 
-sudo apt install curl wget git vim make net-tools wireless_tools xdg-utils openssh neofetch inxi git smartmontools -y
+sudo apt install curl wget git vim make net-tools openssh neofetch inxi git smartmontools -y
 echo
 echo
+
+clear
 
 neofetch
 
@@ -181,7 +183,7 @@ clear
     sudo pacman -Sy curl wget git vim make net-tools wireless_tools xdg-utils openssh neofetch inxi git smartmontools --noconfirm
     echo
     echo
-
+    clear
     neofetch
 
     sleep 6 > /dev/null
