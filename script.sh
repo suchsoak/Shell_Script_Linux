@@ -19,7 +19,7 @@ sudo apt install lsb-release -y
 
 clear
 
-if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ]; then
+if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ] || [ "$(lsb_release -a)" == "vera" ]; then
 
 echo
 echo -e "\e[31m-------------------------| PING | -------------------------\e[0m"
@@ -35,20 +35,20 @@ sleep 3 > /dev/null
 
 clear
 
-echo
-echo "\e[31m-------------------------| DISK | -------------------------\e[0m"
-echo
+# echo
+# echo "\e[31m-------------------------| DISK | -------------------------\e[0m"
+# echo
 
-    if sudo fsck -A /dev/sda; then
-    echo
-    echo
-    else
-        echo "DISK ERROR"
-    fi
+#     if sudo fsck -A /dev/sda; then
+#     echo
+#     echo
+#     else
+#         echo "DISK ERROR"
+#     fi
 
-sleep 2 > /dev/null
+# sleep 2 > /dev/null
 
-clear
+# clear
 
 echo
 echo -e "\e[35m-------------------------| UPDATE | -------------------------\e[0m"
@@ -151,7 +151,7 @@ sudo apt install brave-browser -y
 
 clear
 
- elif [ "$(lsb_release -si)" == "Arch" ]; then
+ elif [ "$(lsb_release -si)" == "Arch" ] || [ "$(lsb_release -a)" == "Arch Linux" ]; then
     echo
     echo -e "\e[31m-------------------------| PING | -------------------------\e[0m"
     echo
