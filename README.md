@@ -46,7 +46,7 @@ Before starting script recommended to update the system before
   net-tools        | Nodejs
   neofetch         | Python
   inxi             | SQL
-  smartmontools    
+  smartmontools    | Java
   wireless_tools   
   xdg-utils       
 ```
