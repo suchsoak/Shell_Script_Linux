@@ -37,13 +37,13 @@ Before starting script recommended to update the system before
 
 # Packages | Programming language 
 
-```sh              | Python
+```sh              
   curl             | Ruby
   wget             | Lua
   git              | gcc 
   vim              | g++
   net-tools        | Nodejs
-  neofetch         
+  neofetch         | Python
   inxi             
   smartmontools    
   wireless_tools   
