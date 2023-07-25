@@ -133,6 +133,19 @@ sleep 3 > /dev/null
 sudo apt install ruby -y
 
 echo
+echo -e "\e[0m------------------------- | Java | -------------------------\e[0m"
+echo
+
+sudo apt update -y
+
+sleep 5 > /dev/null
+
+sudo apt install default-jdk -y
+sudo apt install default-jre -y
+
+clear
+
+echo
 echo -e "\e[0m------------------------- | SQL | -------------------------\e[0m"
 echo
 
@@ -272,6 +285,20 @@ clear
     sudo pacman -S ruby  --noconfirm
 
     sudo pacman -Sy --noconfirm
+
+    echo
+    echo -e "\e[0m------------------------- | Java | -------------------------\e[0m"
+    echo
+
+    sudo apt update -y
+
+    sleep 5 > /dev/null
+
+    sudo pacman -S jre-openjdk --noconfirm
+
+    sleep 3 > /dev/null
+    clear
+
 
     echo
     echo -e "\e[0m------------------------- | SQL | -------------------------\e[0m"
@@ -422,6 +449,19 @@ clear
         sudo dnf install ruby  -y
 
         sudo dnf install update -y
+
+        clear
+
+        echo
+        echo -e "\e[0m------------------------- | Java | -------------------------\e[0m"
+        echo
+
+        sudo apt update -y
+
+        sleep 5 > /dev/null
+
+        sudo dnf install default-jdk -y
+        sudo dnf install default-jre -y
 
         clear
 
