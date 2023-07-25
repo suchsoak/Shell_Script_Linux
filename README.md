@@ -34,6 +34,7 @@ Before starting script recommended to update the system before
 |  Ruby | https://www.ruby-lang.org/pt/
 |  Lua | https://www.lua.org/download.html
 |  nodejs | https://nodejs.org/en
+| Mysql   | https://www.mysql.com/
 
 # Packages | Programming language 
 
