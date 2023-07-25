@@ -285,134 +285,142 @@ clear
     yay -S brave-nightly-bin --noconfirm
     yay -Sy --noconfirm
 
-else
-    echo "Operating system not supported by this script."
-fi
+  elif [ "$(lsb_release -si)" == "Fedora" ]; then
 
-elif [ "$(lsb_release -si)" == "Fedora" ]; then
-
-    echo
-    echo -e "\e[31m-------------------------| PING | -------------------------\e[0m"
-    echo
-    echo
-
-        if ping -c 3 www.google.com; then
         echo
-        else
-            echo "Internet not connected"
-        fi
+        echo -e "\e[31m-------------------------| PING | -------------------------\e[0m"
+        echo
+        echo
 
-    sleep 3 > /dev/null
+            if ping -c 3 www.google.com; then
+            echo
+            else
+                echo "Internet not connected"
+            fi
 
-    clear
+        sleep 3 > /dev/null
 
-    echo
-    echo -e "\e[35m-------------------------| UPDATE | -------------------------\e[0m"
-    echo
+        clear
 
-    sudo dnf update -y
+        echo
+        echo -e "\e[35m-------------------------| UPDATE | -------------------------\e[0m"
+        echo
 
-    clear
+        sudo dnf update -y
 
-    echo
-    echo -e "\e[90m------------------------- | PACKAGES |-------------------------\e[0m"
-    echo
+        clear
+        sleep 4 > /dev/null
 
-    sudo dnf install curl wget git vim make net-tools wireless_tools xdg-utils openssh neofetch inxi git smartmontools -y
-    echo
-    echo
+        echo
+        echo -e "\e[90m------------------------- | PACKAGES |-------------------------\e[0m"
+        echo
 
-    neofetch
-
-    sleep 6 > /dev/null
-
-    clear
+        sudo dnf install git -y
+        sudo dnf install neofetch -y
+        sudo dnf install curl -y
+        sudo dnf install wget -y
+        sudo dnf install vim -y
+        sudo dnf install net-tools -y
+        sudo dnf install wireless_tools -y
+        sudo dnf install xdg-utils -y
+        sudo dnf install openssh -y 
+        sudo dnf install inxi -y
+        sudo dnf install smartmontools -y
     
-    echo
-    echo -e "\e[90m------------------------- | Programming language | -------------------------\e[0m"
-    echo
+        echo
+        echo
 
-    sleep 5 > /dev/null
+        neofetch
 
-    echo
-    echo -e "\e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
-    echo  
+        sleep 6 > /dev/null
+
+        clear
+        
+        echo
+        echo -e "\e[90m------------------------- | Programming language | -------------------------\e[0m"
+        echo
+
+        sleep 5 > /dev/null
+
+        echo
+        echo -e "\e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
+        echo  
 
 
-    sleep 4 > /dev/null
+        sleep 4 > /dev/null
 
-    sudo dnf install gcc g++ -y
+        sudo dnf install gcc g++ -y
 
-    sleep 4 > /dev/null
+        sleep 4 > /dev/null
 
-    clear
+        clear
 
-    echo
-    echo -e "\e[32m------------------------- | Nodejs |-------------------------\e[0m"
-    echo
+        echo
+        echo -e "\e[32m------------------------- | Nodejs |-------------------------\e[0m"
+        echo
 
-    sudo dnf install nodejs -y
+        sudo dnf install nodejs -y
 
-    sleep 4 > /dev/null
+        sleep 4 > /dev/null
 
-    clear
+        clear
 
-    echo
-    echo -e "\e[35m------------------------- | Lua | -------------------------\e[0m"
-    echo
+        echo
+        echo -e "\e[35m------------------------- | Lua | -------------------------\e[0m"
+        echo
 
-    sleep 4 > /dev/null
+        sleep 4 > /dev/null
 
-    sudo dnf install lua -y
+        sudo dnf install lua -y
 
-    sleep 4 > /dev/null
+        sleep 4 > /dev/null
 
-    clear
+        clear
 
-    echo
-    echo -e "\e[34m------------------------- | Python | -------------------------\e[0m"
-    echo
+        echo
+        echo -e "\e[34m------------------------- | Python | -------------------------\e[0m"
+        echo
 
-    sleep 3 > /dev/null
+        sleep 3 > /dev/null
 
-    clear
+        clear
 
-    sudo dnf install python3 python-pip -y
+        sudo dnf install python3 python-pip -y
 
-    sleep 4 > /dev/null
+        sleep 4 > /dev/null
 
-    echo
-    echo -e "\e[31m-------------------------| Ruby | -------------------------\e[0m"
-    echo
+        echo
+        echo -e "\e[31m-------------------------| Ruby | -------------------------\e[0m"
+        echo
 
-    sleep 3 > /dev/null
+        sleep 3 > /dev/null
 
-    sudo dnf install ruby  -y
+        sudo dnf install ruby  -y
 
-    sudo dnf install update -y
+        sudo dnf install update -y
 
-    clear
+        clear
 
-    echo
-    echo -e "\e[34m------------------------- VISUAL CODE STUDIO -------------------------"
-    echo
+        echo
+        echo -e "\e[34m------------------------- VISUAL CODE STUDIO -------------------------"
+        echo
 
-    sleep 3 > /dev/null
-    
-    sudo dnf install code -y
+        sleep 3 > /dev/null
+        
+        sudo dnf install code -y
 
-    clear
+        clear
 
-    echo
-    echo -e "\e[33m------------------------- BRAVE BROWSER -------------------------"
-    echo
+        echo
+        echo -e "\e[33m------------------------- BRAVE BROWSER -------------------------"
+        echo
 
-    sleep 3 > /dev/null
-    sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
-    sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-    sudo dnf update
-    sudo dnf install brave-browser
-    
+        sleep 3 > /dev/null
+        sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+        sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+        sudo dnf update
+        sudo dnf install brave-browser
+        
 
 else
     echo "Operating system not supported by this script."
