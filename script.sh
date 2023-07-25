@@ -27,10 +27,10 @@ sudo dnf install redhat-lsb-core
 
 clear
 
-if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ] || [ "$(lsb_release -a)" == "vera" ]; then
+if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ]; then
 
 echo
-echo -e "\e[31m-------------------------| PING | -------------------------\e[0m"
+echo -e "\e[31m------------------------- | PING | -------------------------\e[0m"
 echo
 
     if ping -c 3 www.google.com; then
@@ -59,7 +59,7 @@ clear
 # clear
 
 echo
-echo -e "\e[35m-------------------------| UPDATE | -------------------------\e[0m"
+echo -e "\e[35m------------------------- | UPDATE | -------------------------\e[0m"
 echo
 
 sudo apt update -y
@@ -175,7 +175,7 @@ sleep 3 > /dev/null
 clear
 
 echo
-echo -e "\e[34m------------------------- VISUAL CODE STUDIO -------------------------"
+echo -e "\e[34m------------------------- | VISUAL CODE STUDIO | -------------------------"
 echo
 
 sleep 3 > /dev/null
@@ -188,7 +188,7 @@ sudo apt-get install code -y
 clear
 
 echo
-echo -e "\e[33m------------------------- BRAVE BROWSER -------------------------"
+echo -e "\e[33m------------------------- | BRAVE BROWSER | -------------------------"
 echo
 
 sudo apt install curl -y
@@ -201,7 +201,7 @@ clear
 
  elif [ "$(lsb_release -si)" == "Arch" ] || [ "$(lsb_release -a)" == "Arch Linux" ]; then
     echo
-    echo -e "\e[31m-------------------------| PING | -------------------------\e[0m"
+    echo -e "\e[31m------------------------- | PING | -------------------------\e[0m"
     echo
     echo
 
@@ -216,7 +216,7 @@ clear
     clear
 
     echo
-    echo -e "\e[35m-------------------------| UPDATE | -------------------------\e[0m"
+    echo -e "\e[35m------------------------- | UPDATE | -------------------------\e[0m"
     echo
 
     sudo pacman -Sy --noconfirm
@@ -323,7 +323,7 @@ clear
     clear
 
     echo
-    echo -e "\e[34m------------------------- VISUAL CODE STUDIO -------------------------"
+    echo -e "\e[34m------------------------- | VISUAL CODE STUDIO | -------------------------"
     echo
 
     sleep 3 > /dev/null
@@ -333,7 +333,7 @@ clear
     clear
 
     echo
-    echo -e "\e[33m------------------------- BRAVE BROWSER -------------------------"
+    echo -e "\e[33m------------------------- | BRAVE BROWSER | -------------------------"
     echo
 
     sleep 3 > /dev/null
@@ -353,7 +353,7 @@ clear
   elif [ "$(lsb_release -si)" == "Fedora" ]; then
 
         echo
-        echo -e "\e[31m-------------------------| PING | -------------------------\e[0m"
+        echo -e "\e[31m------------------------- | PING | -------------------------\e[0m"
         echo
         echo
 
@@ -368,7 +368,7 @@ clear
         clear
 
         echo
-        echo -e "\e[35m-------------------------| UPDATE | -------------------------\e[0m"
+        echo -e "\e[35m------------------------- | UPDATE | -------------------------\e[0m"
         echo
 
         sudo dnf update -y
@@ -455,7 +455,7 @@ clear
         sleep 4 > /dev/null
 
         echo
-        echo -e "\e[31m-------------------------| Ruby | -------------------------\e[0m"
+        echo -e "\e[31m------------------------- | Ruby | -------------------------\e[0m"
         echo
 
         sleep 3 > /dev/null
@@ -480,7 +480,7 @@ clear
         clear
 
         echo
-        echo -e "\e[34m------------------------- VISUAL CODE STUDIO -------------------------"
+        echo -e "\e[34m------------------------- | VISUAL CODE STUDIO | -------------------------"
         echo
 
         sleep 3 > /dev/null
@@ -490,7 +490,7 @@ clear
         clear
 
         echo
-        echo -e "\e[33m------------------------- BRAVE BROWSER -------------------------"
+        echo -e "\e[33m------------------------- | BRAVE BROWSER | -------------------------"
         echo
 
         sleep 3 > /dev/null
