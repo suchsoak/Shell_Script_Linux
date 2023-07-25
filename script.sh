@@ -3,14 +3,14 @@
 # || [ "$(OSTYPE)" == "linux-gnu" ] || [ "GNU/Linux" ]
 
 echo
-echo -e "\e[31m-------------------------| Github: https://github.com/suchsoak | -------------------------\e[0m"
+echo -e "\e[31m------------------------- | Github: https://github.com/suchsoak | -------------------------\e[0m"
 echo
 sleep 7 > /dev/null
 
 clear
 
 echo
-echo -e "\e[31m-------------------------| lsb-release | -------------------------\e[0m"
+echo -e "\e[31m------------------------- | lsb-release | -------------------------\e[0m"
 echo
 
 sleep 5 > /dev/null
@@ -63,7 +63,9 @@ echo -e "\e[35m-------------------------| UPDATE | -------------------------\e[0
 echo
 
 sudo apt update -y
+
 sleep 5 > /dev/null
+
 clear
 
 echo
@@ -72,7 +74,19 @@ echo
 
 sleep 4 > /dev/null
 
-sudo apt install curl wget git vim make net-tools openssh neofetch inxi git smartmontools -y
+sudo apt install make -y
+sudo apt install curl -y
+sudo apt install wget -y
+sudo apt install git -y
+sudo apt install vim -y
+sudo apt install net-tools -y
+sudo apt install openssh -y
+sudo apt install neofetch -y
+sudo apt install inxi -y
+sudo apt install git -y
+sudo apt install smartmontools -y
+
+echo
 echo
 echo
 
