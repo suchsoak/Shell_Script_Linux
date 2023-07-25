@@ -19,7 +19,7 @@ sudo apt install lsb-release -y
 
 clear
 
-if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ] || [ "$(lsb_release -a)" == "vera" ]; then
+if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ] || [ "$(lsb_release -a)" == "vera" ] if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ] || [ "$(lsb_release -a)" == "vera" ] || [ "$(lsb_release -si)" == "Fedora" ]; then; then
 
 echo
 echo -e "\e[31m-------------------------| PING | -------------------------\e[0m"
