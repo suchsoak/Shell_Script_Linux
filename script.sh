@@ -13,9 +13,15 @@ echo
 echo -e "\e[31m-------------------------| lsb-release | -------------------------\e[0m"
 echo
 
+sleep 5 > /dev/null
+
 sudo pacman -S lsb-release --noconfirm
 
+clear
+
 sudo apt install lsb-release -y
+
+clear
 
 sudo dnf install redhat-lsb-core
 
@@ -119,12 +125,23 @@ sudo apt install python3 python-pip  -y
 clear
 
 echo
-echo -e "\e[31m-------------------------| Ruby | -------------------------\e[0m"
+echo -e "\e[31m------------------------- | Ruby | -------------------------\e[0m"
 echo
 
 sleep 3 > /dev/null
 
 sudo apt install ruby -y
+
+echo
+echo -e "\e[0m------------------------- | SQL | -------------------------\e[0m"
+echo
+
+sleep 3 > /dev/null
+
+sudo apt-get install mysql-server
+
+sudo apt-get install postgresql
+
 
 sleep 3 > /dev/null
 
@@ -183,6 +200,7 @@ clear
     echo
 
     sudo pacman -Sy curl wget git vim make net-tools wireless_tools xdg-utils openssh neofetch inxi git smartmontools --noconfirm
+
     echo
     echo
 
@@ -254,6 +272,12 @@ clear
     sudo pacman -S ruby  --noconfirm
 
     sudo pacman -Sy --noconfirm
+
+    echo
+    echo -e "\e[0m------------------------- | SQL | -------------------------\e[0m"
+    echo
+
+    sudo pacman -S mysql
 
     clear
 
