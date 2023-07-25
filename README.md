@@ -44,7 +44,7 @@ Before starting script recommended to update the system before
   vim              | g++
   net-tools        | Nodejs
   neofetch         | Python
-  inxi             
+  inxi             | SQL
   smartmontools    
   wireless_tools   
   xdg-utils       
