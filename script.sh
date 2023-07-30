@@ -165,9 +165,9 @@ echo
 
 sleep 3 > /dev/null
 
-sudo apt-get install mysql-server
+sudo apt-get install mysql-server -y
 
-sudo apt-get install postgresql
+sudo apt-get install postgresql -y
 
 
 sleep 3 > /dev/null
