@@ -318,7 +318,7 @@ clear
     echo -e "\e[0m------------------------- | SQL | -------------------------\e[0m"
     echo
 
-    sudo pacman -S mysql
+    sudo pacman -S mysql --noconfirm
 
     clear
 
