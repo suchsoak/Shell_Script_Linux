@@ -23,7 +23,7 @@ sudo apt install lsb-release -y
 
 clear
 
-sudo dnf install redhat-lsb-core
+sudo dnf install redhat-lsb-core -y
 
 clear
 
