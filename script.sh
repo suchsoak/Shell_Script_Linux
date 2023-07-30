@@ -478,6 +478,16 @@ clear
         clear
 
         echo
+        echo -e "\e[0m------------------------- | SQL | -------------------------\e[0m"
+        echo
+
+        sleep 3 > /dev/null
+
+        sudo dnf install mysql -y
+
+        clear
+
+        echo
         echo -e "\e[34m------------------------- | VISUAL CODE STUDIO | -------------------------"
         echo
 
