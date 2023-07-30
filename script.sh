@@ -470,8 +470,6 @@ clear
         echo -e "\e[0m------------------------- | Java | -------------------------\e[0m"
         echo
 
-        sudo apt update -y
-
         sleep 5 > /dev/null
 
         sudo dnf install default-jdk -y
