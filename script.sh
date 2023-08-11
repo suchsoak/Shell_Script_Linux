@@ -3,14 +3,14 @@
 # || [ "$(OSTYPE)" == "linux-gnu" ] || [ "GNU/Linux" ]
 
 echo
-echo -e "\e[31m------------------------- | Github: https://github.com/suchsoak | -------------------------\e[0m"
+echo -e "                     \e[31m------------------------- | Github: https://github.com/suchsoak | -------------------------\e[0m"
 echo
 sleep 7 > /dev/null
 
 clear
 
 echo
-echo -e "\e[31m------------------------- | lsb-release | -------------------------\e[0m"
+echo -e "                                  \e[31m------------------------- | lsb-release | -------------------------\e[0m"
 echo
 
 sleep 5 > /dev/null
@@ -30,7 +30,7 @@ clear
 if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ]; then
 
 echo
-echo -e "\e[31m------------------------- | PING | -------------------------\e[0m"
+echo -e "                                   \e[31m------------------------- | PING | -------------------------\e[0m"
 echo
 
     if ping -c 3 www.google.com; then
@@ -59,7 +59,7 @@ clear
 # clear
 
 echo
-echo -e "\e[35m------------------------- | UPDATE | -------------------------\e[0m"
+echo -e "                               \e[35m------------------------- | UPDATE | -------------------------\e[0m"
 echo
 
 sudo apt update -y
@@ -69,7 +69,7 @@ sleep 5 > /dev/null
 clear
 
 echo
-echo -e "\e[90m------------------------- | PACKAGES |-------------------------\e[0m"
+echo -e   "                           \e[90m------------------------- | PACKAGES |-------------------------\e[0m"
 echo
 
 sleep 4 > /dev/null
@@ -99,7 +99,7 @@ sleep 4 > /dev/null
 clear
 
 echo
-echo -e "\e[90m------------------------- | Programming language | -------------------------\e[0m"
+echo -e "                    \e[90m------------------------- | Programming language | -------------------------\e[0m"
 echo
 
 sleep 5 > /dev/null
@@ -107,7 +107,7 @@ sleep 5 > /dev/null
 clear
 
 echo
-echo -e "\e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
+echo -e  "                       \e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
 echo  
 
 sleep 4 > /dev/null
@@ -119,7 +119,7 @@ clear
 sleep 3 > /dev/null
 
 echo
-echo -e "\e[32m------------------------- | Nodejs |-------------------------\e[0m"
+echo -e  "                        \e[32m------------------------- | Nodejs |-------------------------\e[0m"
 echo
 
 sleep 3 > /dev/null
@@ -129,7 +129,7 @@ sudo apt install nodejs -y
 clear
 
 echo
-echo -e "\e[34m------------------------- | Python | -------------------------\e[0m"
+echo -e   "                       \e[34m------------------------- | Python | -------------------------\e[0m"
 echo
 
 sleep 3 > /dev/null
@@ -139,7 +139,7 @@ sudo apt install python3 python-pip  -y
 clear
 
 echo
-echo -e "\e[31m------------------------- | Ruby | -------------------------\e[0m"
+echo -e "                          \e[31m------------------------- | Ruby | -------------------------\e[0m"
 echo
 
 sleep 3 > /dev/null
@@ -147,7 +147,7 @@ sleep 3 > /dev/null
 sudo apt install ruby -y
 
 echo
-echo -e "\e[0m------------------------- | Java | -------------------------\e[0m"
+echo -e "                            \e[0m------------------------- | Java | -------------------------\e[0m"
 echo
 
 sudo apt update -y
@@ -160,7 +160,7 @@ sudo apt install default-jre -y
 clear
 
 echo
-echo -e "\e[0m------------------------- | SQL | -------------------------\e[0m"
+echo -e  "                           \e[0m------------------------- | SQL | -------------------------\e[0m"
 echo
 
 sleep 3 > /dev/null
@@ -175,7 +175,7 @@ sleep 3 > /dev/null
 clear
 
 echo
-echo -e "\e[34m------------------------- | VISUAL CODE STUDIO | -------------------------"
+echo -e "                   \e[34m------------------------- | VISUAL CODE STUDIO | -------------------------"
 echo
 
 sleep 3 > /dev/null
@@ -188,7 +188,7 @@ sudo apt-get install code -y
 clear
 
 echo
-echo -e "\e[33m------------------------- | BRAVE BROWSER | -------------------------"
+echo -e "                  \e[33m------------------------- | BRAVE BROWSER | -------------------------"
 echo
 
 sudo apt install curl -y
@@ -201,7 +201,7 @@ clear
 
  elif [ "$(lsb_release -si)" == "Arch" ] || [ "$(lsb_release -a)" == "Arch Linux" ]; then
     echo
-    echo -e "\e[31m------------------------- | PING | -------------------------\e[0m"
+    echo -e "                \e[31m------------------------- | PING | -------------------------\e[0m"
     echo
     echo
 
@@ -216,14 +216,14 @@ clear
     clear
 
     echo
-    echo -e "\e[35m------------------------- | UPDATE | -------------------------\e[0m"
+    echo -e "             \e[35m------------------------- | UPDATE | -------------------------\e[0m"
     echo
 
     sudo pacman -Sy --noconfirm
     clear
 
     echo
-    echo -e "\e[90m------------------------- | PACKAGES |-------------------------\e[0m"
+    echo -e "            \e[90m------------------------- | PACKAGES |-------------------------\e[0m"
     echo
 
     sudo pacman -Sy curl wget git vim make net-tools wireless_tools xdg-utils openssh neofetch inxi git smartmontools --noconfirm
@@ -238,13 +238,13 @@ clear
     clear
     
     echo
-    echo -e "\e[90m------------------------- | Programming language | -------------------------\e[0m"
+    echo -e "       \e[90m------------------------- | Programming language | -------------------------\e[0m"
     echo
 
     sleep 5 > /dev/null
 
     echo
-    echo -e "\e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
+    echo -e "             \e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
     echo  
 
 
@@ -257,7 +257,7 @@ clear
     clear
 
     echo
-    echo -e "\e[32m------------------------- | Nodejs |-------------------------\e[0m"
+    echo -e "          \e[32m------------------------- | Nodejs |-------------------------\e[0m"
     echo
 
     sudo pacman -S nodejs --noconfirm
@@ -267,7 +267,7 @@ clear
     clear
 
     echo
-    echo -e "\e[35m------------------------- | Lua | -------------------------\e[0m"
+    echo -e "         \e[35m------------------------- | Lua | -------------------------\e[0m"
     echo
 
     sleep 4 > /dev/null
@@ -279,7 +279,7 @@ clear
     clear
 
     echo
-    echo -e "\e[34m------------------------- | Python | -------------------------\e[0m"
+    echo -e "        \e[34m------------------------- | Python | -------------------------\e[0m"
     echo
 
     sleep 3 > /dev/null
@@ -291,7 +291,7 @@ clear
     sleep 4 > /dev/null
 
     echo
-    echo -e "\e[31m-------------------------| Ruby | -------------------------\e[0m"
+    echo -e "      \e[31m-------------------------| Ruby | -------------------------\e[0m"
     echo
 
     sleep 3 > /dev/null
@@ -301,7 +301,7 @@ clear
     sudo pacman -Sy --noconfirm
 
     echo
-    echo -e "\e[0m------------------------- | Java | -------------------------\e[0m"
+    echo -e "     \e[0m------------------------- | Java | -------------------------\e[0m"
     echo
 
     sudo apt update -y
@@ -315,7 +315,7 @@ clear
 
 
     echo
-    echo -e "\e[0m------------------------- | SQL | -------------------------\e[0m"
+    echo -e "     \e[0m------------------------- | SQL | -------------------------\e[0m"
     echo
 
     sudo pacman -S mysql --noconfirm
@@ -323,7 +323,7 @@ clear
     clear
 
     echo
-    echo -e "\e[34m------------------------- | VISUAL CODE STUDIO | -------------------------"
+    echo -e "      \e[34m------------------------- | VISUAL CODE STUDIO | -------------------------"
     echo
 
     sleep 3 > /dev/null
@@ -333,7 +333,7 @@ clear
     clear
 
     echo
-    echo -e "\e[33m------------------------- | BRAVE BROWSER | -------------------------"
+    echo -e "          \e[33m------------------------- | BRAVE BROWSER | -------------------------"
     echo
 
     sleep 3 > /dev/null
@@ -353,7 +353,7 @@ clear
   elif [ "$(lsb_release -si)" == "Fedora" ]; then
 
         echo
-        echo -e "\e[31m------------------------- | PING | -------------------------\e[0m"
+        echo -e "          \e[31m------------------------- | PING | -------------------------\e[0m"
         echo
         echo
 
@@ -368,7 +368,7 @@ clear
         clear
 
         echo
-        echo -e "\e[35m------------------------- | UPDATE | -------------------------\e[0m"
+        echo -e "          \e[35m------------------------- | UPDATE | -------------------------\e[0m"
         echo
 
         sudo dnf update -y
@@ -377,7 +377,7 @@ clear
         sleep 4 > /dev/null
 
         echo
-        echo -e "\e[90m------------------------- | PACKAGES |-------------------------\e[0m"
+        echo -e "       \e[90m------------------------- | PACKAGES |-------------------------\e[0m"
         echo
 
         sudo dnf install git -y
@@ -402,13 +402,13 @@ clear
         clear
         
         echo
-        echo -e "\e[90m------------------------- | Programming language | -------------------------\e[0m"
+        echo -e "          \e[90m------------------------- | Programming language | -------------------------\e[0m"
         echo
 
         sleep 5 > /dev/null
 
         echo
-        echo -e "\e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
+        echo -e "          \e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
         echo  
 
 
@@ -421,7 +421,7 @@ clear
         clear
 
         echo
-        echo -e "\e[32m------------------------- | Nodejs |-------------------------\e[0m"
+        echo -e "          \e[32m------------------------- | Nodejs |-------------------------\e[0m"
         echo
 
         sudo dnf install nodejs -y
@@ -431,7 +431,7 @@ clear
         clear
 
         echo
-        echo -e "\e[35m------------------------- | Lua | -------------------------\e[0m"
+        echo -e "         \e[35m------------------------- | Lua | -------------------------\e[0m"
         echo
 
         sleep 4 > /dev/null
@@ -443,7 +443,7 @@ clear
         clear
 
         echo
-        echo -e "\e[34m------------------------- | Python | -------------------------\e[0m"
+        echo -e "          \e[34m------------------------- | Python | -------------------------\e[0m"
         echo
 
         sleep 3 > /dev/null
@@ -455,7 +455,7 @@ clear
         sleep 4 > /dev/null
 
         echo
-        echo -e "\e[31m------------------------- | Ruby | -------------------------\e[0m"
+        echo -e "          \e[31m------------------------- | Ruby | -------------------------\e[0m"
         echo
 
         sleep 3 > /dev/null
@@ -467,7 +467,7 @@ clear
         clear
 
         echo
-        echo -e "\e[0m------------------------- | Java | -------------------------\e[0m"
+        echo -e "          \e[0m------------------------- | Java | -------------------------\e[0m"
         echo
 
         sleep 5 > /dev/null
@@ -478,7 +478,7 @@ clear
         clear
 
         echo
-        echo -e "\e[0m------------------------- | SQL | -------------------------\e[0m"
+        echo -e "          \e[0m------------------------- | SQL | -------------------------\e[0m"
         echo
 
         sleep 3 > /dev/null
@@ -488,7 +488,7 @@ clear
         clear
 
         echo
-        echo -e "\e[34m------------------------- | VISUAL CODE STUDIO | -------------------------"
+        echo -e "          \e[34m------------------------- | VISUAL CODE STUDIO | -------------------------"
         echo
 
         sleep 3 > /dev/null
@@ -498,7 +498,7 @@ clear
         clear
 
         echo
-        echo -e "\e[33m------------------------- | BRAVE BROWSER | -------------------------"
+        echo -e "          \e[33m------------------------- | BRAVE BROWSER | -------------------------"
         echo
 
         sleep 3 > /dev/null
