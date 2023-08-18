@@ -199,6 +199,19 @@ sudo apt install brave-browser -y
 
 clear
 
+cho
+echo -e "                          \e[31m------------------------- | Github: https://github.com/suchsoak | -------------------------\e[0m"
+echo
+
+sudo dpkg --configure -a
+sudo apt install -f
+sudo apt update && sudo apt upgrade -y
+sudo apt reinstall libwacom-common && sudo apt reinstall libwacom-bin
+sudo apt-get autoclean &&  sudo apt-get clean && sudo apt-get autoremove && sudo apt-get update --fix-missing && sudo apt-get upgrade --fix-missing 
+sudo apt-get update && sudo apt-get upgrade -y
+
+clear
+
  elif [ "$(lsb_release -si)" == "Arch" ] || [ "$(lsb_release -a)" == "Arch Linux" ]; then
     echo
     echo -e "                \e[31m------------------------- | PING | -------------------------\e[0m"
