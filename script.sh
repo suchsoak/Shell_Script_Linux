@@ -200,14 +200,14 @@ sudo apt install brave-browser -y
 clear
 
 echo
-echo -e "                          \e[31m------------------------- |UPDATE | -------------------------\e[0m"
+echo -e "                                  \e[31m------------------------- | UPDATE | -------------------------\e[0m"
 echo
 
 sudo dpkg --configure -a
-sudo apt install -f
+sudo apt install -f -y 
 sudo apt update && sudo apt upgrade -y
-sudo apt reinstall libwacom-common && sudo apt reinstall libwacom-bin
-sudo apt-get autoclean &&  sudo apt-get clean && sudo apt-get autoremove && sudo apt-get update --fix-missing && sudo apt-get upgrade --fix-missing 
+sudo apt reinstall libwacom-common && sudo apt reinstall libwacom-bin -y
+sudo apt-get autoclean &&  sudo apt-get clean && sudo apt-get autoremove && sudo apt-get update --fix-missing && sudo apt-get upgrade --fix-missing -y
 sudo apt-get update && sudo apt-get upgrade -y
 
 clear
