@@ -38,7 +38,7 @@ Before starting script recommended to update the system before
 
 # Packages | Programming language 
 
-```sh              
+```sh            
   curl             | Ruby
   wget             | Lua
   git              | gcc 
@@ -48,5 +48,7 @@ Before starting script recommended to update the system before
   inxi             | SQL
   smartmontools    | Java
   wireless_tools   
-  xdg-utils       
+  xdg-utils
+  libwacom-bin
+  libwacom-common     
 ```
