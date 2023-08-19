@@ -199,8 +199,8 @@ sudo apt install brave-browser -y
 
 clear
 
-cho
-echo -e "                          \e[31m------------------------- | Github: https://github.com/suchsoak | -------------------------\e[0m"
+echo
+echo -e "                          \e[31m------------------------- |UPDATE | -------------------------\e[0m"
 echo
 
 sudo dpkg --configure -a
