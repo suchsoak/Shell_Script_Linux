@@ -50,5 +50,7 @@ Before starting script recommended to update the system before
   wireless_tools   
   xdg-utils
   libwacom-bin
-  libwacom-common     
+  libwacom-common
+  Visual Code studio
+  Brave Browser
 ```
