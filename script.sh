@@ -2,6 +2,9 @@
 # [[ "$OSTYPE" == "linux-gnu"*
 # || [ "$(OSTYPE)" == "linux-gnu" ] || [ "GNU/Linux" ]
 
+# BSD 3-Clause License
+# Copyright (c) 2023, ~#M?x
+
 echo
 echo -e "                     \e[31m------------------------- | Github: https://github.com/suchsoak | -------------------------\e[0m"
 echo
