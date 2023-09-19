@@ -35,6 +35,7 @@ Before starting script recommended to update the system before
 |  Lua | https://www.lua.org/download.html
 |  nodejs | https://nodejs.org/en
 | Mysql   | https://www.mysql.com/
+| Docker   | https://www.docker.com/
 
 # Packages | Programming language 
 
