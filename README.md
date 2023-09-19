@@ -51,6 +51,8 @@ Before starting script recommended to update the system before
   xdg-utils
   libwacom-bin
   libwacom-common
+  Docker
+  rpm (for fedora)
   Visual Code studio
   Brave Browser
 ```
