@@ -15,14 +15,24 @@ Before starting script recommended to update the system before
   git clone https://github.com/suchsoak/Shell_Scirpt_Linux.git
 ```
 
-## Use
+## How use
 
 ```sh
-  chmod +x script.sh
+  chmod +X script.sh
 ```
 
 ```sh
   bash ./script.sh
+```
+
+Or
+
+```sh
+  chmod 777 script.sh
+```
+
+```sh
+  ./script.sh
 ```
 #
 
@@ -31,11 +41,12 @@ Before starting script recommended to update the system before
 | VISUAL CODE STUDIO | https://code.visualstudio.com/
 | BRAVE BROWSER | https://brave.com/pt-br/download/
 |  Python | https://www.python.org/
-|  Ruby | https://www.ruby-lang.org/pt/
+|  Ruby | https://www.ruby-lang.org/en/
 |  Lua | https://www.lua.org/download.html
 |  nodejs | https://nodejs.org/en
 | Mysql   | https://www.mysql.com/
 | Docker   | https://www.docker.com/
+| RPM   | https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/RPM/
 
 # Packages | Programming language 
 
