@@ -46,21 +46,6 @@ sleep 3 > /dev/null
 
 clear
 
-# echo
-# echo "\e[31m-------------------------| DISK | -------------------------\e[0m"
-# echo
-
-#     if sudo fsck -A /dev/sda; then
-#     echo
-#     echo
-#     else
-#         echo "DISK ERROR"
-#     fi
-
-# sleep 2 > /dev/null
-
-# clear
-
 echo
 echo -e "                               \e[35m------------------------- | UPDATE | -------------------------\e[0m"
 echo
@@ -88,6 +73,9 @@ sudo apt install neofetch -y
 sudo apt install inxi -y
 sudo apt install git -y
 sudo apt install smartmontools -y
+sudo apt install Docker -y
+sudo apt install nano -y
+sudo apt update
 
 echo
 echo
@@ -407,6 +395,8 @@ clear
         sudo dnf install openssh -y 
         sudo dnf install inxi -y
         sudo dnf install smartmontools -y
+        sudo dnf install docker -y
+        sudo dnf install rpm -y && sudo dnf install gparted -y   
     
         echo
         echo
