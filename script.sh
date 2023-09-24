@@ -466,7 +466,7 @@ clear
 
         sleep 3 > /dev/null
 
-        sudo dnf install ruby  -y
+        sudo dnf install ruby-devel -y
 
         sudo dnf install update -y
 
