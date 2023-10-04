@@ -131,6 +131,7 @@ echo
 sleep 3 > /dev/null
 
 sudo apt install python3 python-pip  -y
+sudo python -m pip install --upgrade pip
 
 clear
 
@@ -141,6 +142,7 @@ echo
 sleep 3 > /dev/null
 
 sudo apt install ruby -y
+sudo gem update 
 
 echo
 echo -e "                                   \e[0m------------------------- | Java | -------------------------\e[0m"
@@ -306,6 +308,7 @@ clear
     sleep 3 > /dev/null
 
     sudo pacman -S ruby  --noconfirm
+    sudo gem update
 
     sudo pacman -Sy --noconfirm
 
@@ -462,6 +465,7 @@ clear
         clear
 
         sudo dnf install python3 python-pip -y
+        sudo python -m pip install --upgrade pip
 
         sleep 4 > /dev/null
 
@@ -473,6 +477,7 @@ clear
 
         sudo dnf install ruby-devel -y
         sudo dnf groupinstall -y
+        sudo gem update
 
         sudo dnf install update -y
 
