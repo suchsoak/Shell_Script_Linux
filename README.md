@@ -53,19 +53,19 @@ Or
 # Packages | Programming language 
 
 ```sh            
-  curl             | Ruby
+  curl             | Ruby (gem)
   wget             | Lua
   git              | gcc 
   vim              | g++
   net-tools        | Nodejs
-  neofetch         | Python
+  neofetch         | Python (pip) 
   inxi             | SQL
   smartmontools    | Java
   wireless_tools   
   xdg-utils
   libwacom-bin
   libwacom-common
-  Docker
+  Docker or Docker.io
   rpm (for fedora)
   Visual Code studio
   Brave Browser
