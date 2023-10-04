@@ -5,7 +5,9 @@ This script is under development
 
 Before starting script recommended to update the system before
 
-# Ubuntu | Debian | Arch | Kali Linux | Linux Mint | Fedora
+# Linux
+
+Ubuntu | Debian | Arch | Kali Linux | Linux Mint | Fedora
 
 ## Install
 
