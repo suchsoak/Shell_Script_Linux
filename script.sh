@@ -78,7 +78,7 @@ sudo apt install neofetch -y
 sudo apt install inxi -y
 sudo apt install git -y
 sudo apt install smartmontools -y
-sudo apt install Docker -y
+sudo apt install docker.io -y
 sudo apt install nano -y
 sudo apt update
 
@@ -238,6 +238,7 @@ clear
     echo
 
     sudo pacman -Sy curl wget git vim make net-tools wireless_tools xdg-utils openssh neofetch inxi git smartmontools --noconfirm
+    sudo pacman -S docker --noconfirm
 
     echo
     echo
