@@ -17,6 +17,16 @@ Ubuntu | Debian | Arch | Kali Linux | Linux Mint | Fedora
   git clone https://github.com/suchsoak/Shell_Scirpt_Linux.git
 ```
 
+## Docker
+
+```sh
+  apt install sudo -y
+```
+
+```sh
+  git clone https://github.com/suchsoak/Shell_Scirpt_Linux.git
+```
+
 ## How use
 
 ```sh
@@ -36,7 +46,6 @@ Or
 ```sh
   ./script.sh
 ```
-#
 
 | Downloads |  Links |
 | ------ | ------ |
