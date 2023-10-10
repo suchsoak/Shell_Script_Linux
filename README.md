@@ -7,7 +7,7 @@ Before starting script recommended to update the system before
 
 # Linux
 
-Ubuntu | Debian | Arch | Kali Linux | Linux Mint | Fedora
+Ubuntu | Debian | Arch | Kali Linux | Parrot OS | Linux Mint | Fedora
 
 ## Install
 
