@@ -35,7 +35,7 @@ sudo dnf install redhat-lsb-core -y
 
 clear
 
-if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ]; then
+if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ] || [ "$(lsb_release -si)" == "parrot" ]; then
 
 echo
 echo -e "                                   \e[31m------------------------- | PING | -------------------------\e[0m"
