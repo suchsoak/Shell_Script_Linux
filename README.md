@@ -17,6 +17,9 @@ Ubuntu | Debian | Arch | Kali Linux | Parrot OS | Linux Mint | Fedora
   git clone https://github.com/suchsoak/Shell_Scirpt_Linux.git
 ```
 
+```sh
+  chmod +X script.sh or chmod 777 script.sh       
+```
 ## Docker
 
 ```sh
@@ -27,38 +30,11 @@ Ubuntu | Debian | Arch | Kali Linux | Parrot OS | Linux Mint | Fedora
   git clone https://github.com/suchsoak/Shell_Scirpt_Linux.git
 ```
 
-## How use
+## How to use
 
 ```sh
-  chmod +X script.sh
+  bash ./script.sh or ./script.sh
 ```
-
-```sh
-  bash ./script.sh
-```
-
-Or
-
-```sh
-  chmod 777 script.sh
-```
-
-```sh
-  ./script.sh
-```
-
-| Downloads |  Links |
-| ------ | ------ |
-| VISUAL CODE STUDIO | https://code.visualstudio.com/
-| BRAVE BROWSER | https://brave.com/pt-br/download/
-|  Python | https://www.python.org/
-|  Ruby | https://www.ruby-lang.org/en/
-|  Lua | https://www.lua.org/download.html
-|  nodejs | https://nodejs.org/en
-| Mysql   | https://www.mysql.com/
-| Docker   | https://www.docker.com/
-| RPM   | https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/RPM/
-
 # Packages | Programming language 
 
 ```sh            
@@ -79,3 +55,15 @@ Or
   Visual Code studio
   Brave Browser
 ```
+
+| Downloads |  Links |
+| ------ | ------ |
+| VISUAL CODE STUDIO | https://code.visualstudio.com/
+| BRAVE BROWSER | https://brave.com/pt-br/download/
+|  Python | https://www.python.org/
+|  Ruby | https://www.ruby-lang.org/en/
+|  Lua | https://www.lua.org/download.html
+|  nodejs | https://nodejs.org/en
+| Mysql   | https://www.mysql.com/
+| Docker   | https://www.docker.com/
+| RPM   | https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/RPM/
