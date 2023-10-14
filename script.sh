@@ -489,7 +489,7 @@ clear
         echo
 
         sleep 5 > /dev/null
-
+        sudo dnf install java-devel -y
         sudo dnf install default-jdk -y
         sudo dnf install default-jre -y
 
