@@ -20,17 +20,8 @@ Ubuntu | Debian | Arch | Kali Linux | Parrot OS | Linux Mint | Fedora
 ```sh
   chmod +X script.sh or chmod 777 script.sh       
 ```
-## Docker
 
-```sh
-  apt install sudo -y
-```
-
-```sh
-  git clone https://github.com/suchsoak/Shell_Scirpt_Linux.git
-```
-
-## How to use
+## Usage
 
 ```sh
   bash ./script.sh or ./script.sh
