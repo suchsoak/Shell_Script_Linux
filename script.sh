@@ -23,15 +23,15 @@ echo
 
 sleep 5 > /dev/null
 
-sudo pacman -S lsb-release --noconfirm
+sudo pacman -S lsb-release --noconfirm > /dev/null
 
 clear
 
-sudo apt install lsb-release -y
+sudo apt install lsb-release -y > /dev/null
 
 clear
 
-sudo dnf install redhat-lsb-core -y
+sudo dnf install redhat-lsb-core -y > /dev/null
 
 clear
 
