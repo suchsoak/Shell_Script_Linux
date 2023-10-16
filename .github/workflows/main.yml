@@ -11,6 +11,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: test shell
+      - name: chmod
         run: |
-          sudo bash ./script.sh
+        chmod +X script.sh
+        
+      - name: ./script.sh
+        run: |
+        sudo bash ./script.sh
