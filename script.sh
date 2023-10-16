@@ -131,6 +131,7 @@ echo
 sleep 3 > /dev/null
 
 sudo apt install python3 python-pip  -y
+sudo apt install pip -y
 sudo python -m pip install --upgrade pip
 
 clear
