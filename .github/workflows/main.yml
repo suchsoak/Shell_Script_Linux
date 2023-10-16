@@ -13,4 +13,4 @@ jobs:
 
       - name: test shell
         run: |
-          bash ./script.sh
+          ./script.sh
