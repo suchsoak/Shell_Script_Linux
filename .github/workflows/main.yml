@@ -13,4 +13,4 @@ jobs:
 
       - name: test shell
         run: |
-          ./script.sh
+          sudo bash ./script.sh
