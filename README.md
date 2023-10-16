@@ -58,3 +58,5 @@ Ubuntu | Debian | Arch | Kali Linux | Parrot OS | Linux Mint | Fedora
 | Mysql   | https://www.mysql.com/
 | Docker   | https://www.docker.com/
 | RPM   | https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/RPM/
+| lsb-release  | https://www.howtogeek.com/691214/how-to-check-the-linux-kernel-and-operating-system-version/ or https://manpages.debian.org/bullseye/lsb-release/lsb_release.1.en.html
+
