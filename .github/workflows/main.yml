@@ -10,11 +10,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: chmod
-        run: |
-        chmod +X script.sh
         
       - name: ./script.sh
         run: |
-        sudo bash ./script.sh
+          chmod +X script.sh
+          bash ./script.sh
