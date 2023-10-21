@@ -1,9 +1,4 @@
 #!/bin/bash/
-# [[ "$OSTYPE" == "linux-gnu"*
-# || [ "$(OSTYPE)" == "linux-gnu" ] || [ "GNU/Linux" ]
-
-# BSD 3-Clause License
-# Copyright (c) 2023, ~#M?x
 
 echo "  _________/\            __   __                         __         __   "
 echo " /   _____/  |__   ____ |  | |  |    ______ ____ _______|__|_____ _/  |_ "
@@ -13,13 +8,6 @@ echo "/_______  /___|  /\___  /____/____//____  \\___  /|__|  |__|   ___/|__|  "
 echo "        \/     \/     \/                \/     \/          |__|"
 echo "                   Github: https://github.com/suchsoak                   "
 
-sleep 5 > /dev/null
-
-clear
-
-echo
-echo -e "                                  \e[31m------------------------- | lsb-release | -------------------------\e[0m"
-echo
 
 sleep 5 > /dev/null
 
@@ -33,37 +21,19 @@ clear
 
 sudo dnf install redhat-lsb-core -y > /dev/null
 
-clear
+clear  
 
-if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ] || [ "$(lsb_release -si)" == "parrot" ]; then
-
-echo
-echo -e "                                   \e[31m------------------------- | PING | -------------------------\e[0m"
-echo
-
-    if ping -c 3 www.google.com; then
-    echo
-    else
-        echo "Internet not connected"
-    fi
+if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ]; then
 
 sleep 3 > /dev/null
 
 clear
-
-echo
-echo -e "                               \e[35m------------------------- | UPDATE | -------------------------\e[0m"
-echo
 
 sudo apt update -y
 
 sleep 5 > /dev/null
 
 clear
-
-echo
-echo -e   "                                  \e[90m------------------------- | PACKAGES |-------------------------\e[0m"
-echo
 
 sleep 4 > /dev/null
 
@@ -78,9 +48,6 @@ sudo apt install neofetch -y
 sudo apt install inxi -y
 sudo apt install git -y
 sudo apt install smartmontools -y
-sudo apt install docker.io -y
-sudo apt install nano -y
-sudo apt update
 
 echo
 echo
@@ -94,18 +61,6 @@ sleep 4 > /dev/null
 
 clear
 
-echo
-echo -e "                          \e[90m------------------------- | Programming language | -------------------------\e[0m"
-echo
-
-sleep 5 > /dev/null
-
-clear
-
-echo
-echo -e  "                             \e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
-echo  
-
 sleep 4 > /dev/null
 
 sudo apt-get install build-essential gcc g++ -y
@@ -114,40 +69,15 @@ clear
 
 sleep 3 > /dev/null
 
-echo
-echo -e  "                              \e[32m------------------------- | Nodejs |-------------------------\e[0m"
-echo        
-
-sleep 3 > /dev/null
-
 sudo apt install nodejs -y
 
 clear
 
-echo
-echo -e   "                             \e[34m------------------------- | Python | -------------------------\e[0m"
-echo
-
-sleep 3 > /dev/null
-
 sudo apt install python3 python-pip  -y
-sudo apt install pip -y
-sudo python -m pip install --upgrade pip
 
 clear
 
-echo
-echo -e "                                 \e[31m------------------------- | Ruby | -------------------------\e[0m"
-echo
-
-sleep 3 > /dev/null
-
 sudo apt install ruby -y
-sudo gem update 
-
-echo
-echo -e "                                   \e[0m------------------------- | Java | -------------------------\e[0m"
-echo    
 
 sudo apt update -y
 
@@ -157,10 +87,6 @@ sudo apt install default-jdk -y
 sudo apt install default-jre -y
 
 clear
-
-echo
-echo -e  "                                 \e[0m------------------------- | SQL | -------------------------\e[0m"
-echo
 
 sleep 3 > /dev/null
 
@@ -173,10 +99,6 @@ sleep 3 > /dev/null
 
 clear
 
-echo
-echo -e "                           \e[34m------------------------- | VISUAL CODE STUDIO | -------------------------"
-echo
-
 sleep 3 > /dev/null
 
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
@@ -186,10 +108,6 @@ sudo apt-get install code -y
 
 clear
 
-echo
-echo -e "                       \e[33m------------------------- | BRAVE BROWSER | -------------------------"
-echo
-
 sudo apt install curl -y
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
@@ -197,10 +115,6 @@ sudo apt update -y
 sudo apt install brave-browser -y
 
 clear
-
-echo
-echo -e "                                  \e[31m------------------------- | UPDATE | -------------------------\e[0m"
-echo
 
 sudo dpkg --configure -a
 sudo apt install -f -y 
@@ -212,78 +126,35 @@ sudo apt-get update && sudo apt-get upgrade -y
 clear
 
  elif [ "$(lsb_release -si)" == "Arch" ] || [ "$(lsb_release -a)" == "Arch Linux" ]; then
-    echo
-    echo -e "                \e[31m------------------------- | PING | -------------------------\e[0m"
-    echo
-    echo
-
-        if ping -c 3 www.google.com; then
-        echo
-        else
-            echo "Internet not connected"
-        fi
-
-    sleep 3 > /dev/null
 
     clear
-
-    echo
-    echo -e "                       \e[35m------------------------- | UPDATE | -------------------------\e[0m"
-    echo
 
     sudo pacman -Sy --noconfirm
     clear
 
-    echo
-    echo -e "                     \e[90m------------------------- | PACKAGES |-------------------------\e[0m"
-    echo
-
     sudo pacman -Sy curl wget git vim make net-tools wireless_tools xdg-utils openssh neofetch inxi git smartmontools --noconfirm
-    sudo pacman -S docker --noconfirm
 
     echo
     echo
 
+    clear
     neofetch
 
-    sleep 6 > /dev/null
+    sleep 2 > /dev/null
 
     clear
-    
-    echo
-    echo -e "                    \e[90m------------------------- | Programming language | -------------------------\e[0m"
-    echo
-
-    sleep 5 > /dev/null
-
-    echo
-    echo -e "                       \e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
-    echo  
-
-
-    sleep 4 > /dev/null
-
+  
     sudo pacman -S gcc g++ --noconfirm
 
-    sleep 4 > /dev/null
+    sleep 1 > /dev/null
 
     clear
-
-    echo
-    echo -e "                        \e[32m------------------------- | Nodejs |-------------------------\e[0m"
-    echo
 
     sudo pacman -S nodejs --noconfirm
 
-    sleep 4 > /dev/null
+    sleep 1 > /dev/null
 
     clear
-
-    echo
-    echo -e "                     \e[35m------------------------- | Lua | -------------------------\e[0m"
-    echo
-
-    sleep 4 > /dev/null
 
     sudo pacman -S lua --noconfirm
 
@@ -291,72 +162,32 @@ clear
 
     clear
 
-    echo
-    echo -e "                    \e[34m------------------------- | Python | -------------------------\e[0m"
-    echo
-
-    sleep 3 > /dev/null
-
-    clear
-
     sudo pacman -S python3 python-pip --noconfirm
 
     sleep 4 > /dev/null
 
-    echo
-    echo -e "                 \e[31m-------------------------| Ruby | -------------------------\e[0m"
-    echo
-
-    sleep 3 > /dev/null
 
     sudo pacman -S ruby  --noconfirm
-    sudo gem update
 
     sudo pacman -Sy --noconfirm
-
-    echo
-    echo -e "                    \e[0m------------------------- | Java | -------------------------\e[0m"
-    echo
-
-    sudo apt update -y
-
-    sleep 5 > /dev/null
+    
+    clear
 
     sudo pacman -S jre-openjdk --noconfirm
 
-    sleep 3 > /dev/null
     clear
-
-
-    echo
-    echo -e "                     \e[0m------------------------- | SQL | -------------------------\e[0m"
-    echo
 
     sudo pacman -S mysql --noconfirm
 
     clear
-
-    echo
-    echo -e "                 \e[34m------------------------- | VISUAL CODE STUDIO | -------------------------"
-    echo
-
-    sleep 3 > /dev/null
     
     sudo pacman -S code --noconfirm
 
     clear
 
-    echo
-    echo -e "                         \e[33m------------------------- | BRAVE BROWSER | -------------------------"
-    echo
-
-    sleep 3 > /dev/null
-
     sudo pacman -S git --noconfirm
     git clone https://aur.archlinux.org/yay.git
     cd yay
-
-    sleep 4 > /dev/null
 
     makepkg -si --noconfirm
     yay -S brave-bin --noconfirm
@@ -364,35 +195,19 @@ clear
     yay -S brave-nightly-bin --noconfirm
     yay -Sy --noconfirm
 
+    clear
+    echo "Scirpt Complete!"
+
   elif [ "$(lsb_release -si)" == "Fedora" ]; then
-
-        echo
-        echo -e "          \e[31m------------------------- | PING | -------------------------\e[0m"
-        echo
-        echo
-
-            if ping -c 3 www.google.com; then
-            echo
-            else
-                echo "Internet not connected"
-            fi
 
         sleep 3 > /dev/null
 
         clear
 
-        echo
-        echo -e "                   \e[35m------------------------- | UPDATE | -------------------------\e[0m"
-        echo
-
+        sudo dnf check-update
         sudo dnf update -y
 
         clear
-        sleep 4 > /dev/null
-
-        echo
-        echo -e "                  \e[90m------------------------- | PACKAGES |-------------------------\e[0m"
-        echo
 
         sudo dnf install git -y
         sudo dnf install neofetch -y
@@ -405,50 +220,27 @@ clear
         sudo dnf install openssh -y 
         sudo dnf install inxi -y
         sudo dnf install smartmontools -y
-        sudo dnf install docker -y
-        sudo dnf install rpm -y && sudo dnf install gparted -y   
-    
-        echo
-        echo
+
+        clear
 
         neofetch
 
-        sleep 6 > /dev/null
+        sleep 1 > /dev/null
 
         clear
-        
-        echo
-        echo -e "                    \e[90m------------------------- | Programming language | -------------------------\e[0m"
-        echo
-
-        sleep 5 > /dev/null
-
-        echo
-        echo -e "                       \e[34m------------------------- | Gcc G++ |-------------------------\e[0m"
-        echo  
-
-
-        sleep 4 > /dev/null
 
         sudo dnf install gcc g++ -y
 
-        sleep 4 > /dev/null
+        sleep 1 > /dev/null
 
         clear
-
-        echo
-        echo -e "                       \e[32m------------------------- | Nodejs |-------------------------\e[0m"
-        echo
 
         sudo dnf install nodejs -y
 
-        sleep 4 > /dev/null
+        sleep 1 > /dev/null
 
         clear
 
-        echo
-        echo -e "                       \e[35m------------------------- | Lua | -------------------------\e[0m"
-        echo
 
         sleep 4 > /dev/null
 
@@ -458,47 +250,20 @@ clear
 
         clear
 
-        echo
-        echo -e "                      \e[34m------------------------- | Python | -------------------------\e[0m"
-        echo
-
-        sleep 3 > /dev/null
-
-        clear
-
         sudo dnf install python3 python-pip -y
-        sudo python -m pip install --upgrade pip
-
-        sleep 4 > /dev/null
-
-        echo
-        echo -e "                      \e[31m------------------------- | Ruby | -------------------------\e[0m"
-        echo
-
+        clear
         sleep 3 > /dev/null
 
-        sudo dnf install ruby-devel -y
-        sudo dnf groupinstall -y
-        sudo gem update
+        sudo dnf install ruby  -y
 
         sudo dnf install update -y
 
         clear
 
-        echo
-        echo -e "                   \e[0m------------------------- | Java | -------------------------\e[0m"
-        echo
-
-        sleep 5 > /dev/null
-        sudo dnf install java-devel -y
         sudo dnf install default-jdk -y
         sudo dnf install default-jre -y
 
         clear
-
-        echo
-        echo -e "                   \e[0m------------------------- | SQL | -------------------------\e[0m"
-        echo
 
         sleep 3 > /dev/null
 
@@ -506,22 +271,11 @@ clear
 
         clear
 
-        echo
-        echo -e "                   \e[34m------------------------- | VISUAL CODE STUDIO | -------------------------"
-        echo
-
         sleep 3 > /dev/null
         
-        sudo dnf upgrade --refresh -y
-        sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-        printf "[vscode]\nname=packages.microsoft.com\nbaseurl=https://packages.microsoft.com/yumrepos/vscode/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscode.repo
         sudo dnf install code -y
 
         clear
-
-        echo
-        echo -e "                  \e[33m------------------------- | BRAVE BROWSER | -------------------------"
-        echo
 
         sleep 3 > /dev/null
         sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
@@ -529,6 +283,10 @@ clear
         sudo dnf update
         sudo dnf install brave-browser -y
         
+        clear
+        echo
+        echo "Script Complet!"
+        echo
 
 else
     echo "Operating system not supported by this script."
