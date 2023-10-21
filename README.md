@@ -39,6 +39,7 @@ Ubuntu | Debian | Arch | Kali Linux | Parrot OS | Linux Mint | Fedora
   smartmontools    | Java
   wireless_tools   
   xdg-utils
+  lsb-release
   libwacom-bin
   libwacom-common
   Docker or Docker.io
