@@ -11,18 +11,6 @@ echo "                   Github: https://github.com/suchsoak                   "
 
 sleep 5 > /dev/null
 
-sudo pacman -S  --noconfirm > /dev/null
-
-clear
-
-sudo apt install lsb-release -y > /dev/null
-
-clear
-
-sudo dnf install redhat-lsb-core -y > /dev/null
-
-clear  
-
 if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ]; then
 
 clear
@@ -43,7 +31,7 @@ sudo apt install wget -y
 sudo apt install git -y
 sudo apt install vim -y
 sudo apt install net-tools -y
-sudo apt install openssh -y
+sudo apt install ssh -y
 sudo apt install neofetch -y
 sudo apt install inxi -y
 sudo apt install git -y
