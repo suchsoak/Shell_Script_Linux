@@ -6,10 +6,7 @@ echo " \_____  \|  |  \_/ __ \|  | |  |   /  ___// ___\\_  __ \  |____ \\   __\ 
 echo " /        \      \  ___/_  |__  |__ \___ \\  \___ |  | \/  |  |_\ \|  |  "
 echo "/_______  /___|  /\___  /____/____//____  \\___  /|__|  |__|   ___/|__|  "
 echo "        \/     \/     \/                \/     \/          |__|"
-echo "                   Github: https://github.com/suchsoak                   "
-
-
-sleep 5 > /dev/null
+echo "                   Github: https://github.com/suchsoak                   "   
 
 if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ]; then
 
@@ -62,6 +59,7 @@ echo
 sleep 3 > /dev/null
 sudo apt install python3 python-pip  -y
 sudo apt install pip -y
+python -m pip install --upgrade pip
 
 clear
 
@@ -101,8 +99,8 @@ clear
 
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-sudo apt-get update -y
-sudo apt-get install code -y
+sudo apt update -y
+sudo apt install code -y
 
 clear
 
@@ -130,7 +128,7 @@ sudo dpkg --configure -a
 sudo apt install -f -y 
 sudo apt update && sudo apt upgrade -y
 sudo apt reinstall libwacom-common && sudo apt reinstall libwacom-bin -y
-sudo apt-get autoclean &&  sudo apt-get clean && sudo apt-get autoremove && sudo apt-get update --fix-missing && sudo apt-get upgrade --fix-missing -y
+sudo apt-get autoclean -y &&  sudo apt-get clean -y && sudo apt-get autoremove -y && sudo apt-get update --fix-missing -y && sudo apt-get upgrade --fix-missing -y
 sudo apt-get update && sudo apt-get upgrade -y
 
 clear
@@ -144,7 +142,7 @@ echo "Script Complete!"
     sudo pacman -Sy --noconfirm
     clear
 
-    sudo pacman -Sy curl wget git vim make net-tools wireless_tools xdg-utils openssh neofetch inxi git smartmontools --noconfirm
+    sudo pacman -Sy curl wget git vim make net-tools wireless_tools nano xdg-utils openssh neofetch inxi git smartmontools --noconfirm
     sudo pacman -S docker --noconfirm
 
     clear
@@ -173,6 +171,7 @@ echo "Script Complete!"
     clear
 
     sudo pacman -S python3 python-pip --noconfirm
+    python -m pip install --upgrade pip
 
     sleep 4 > /dev/null
 
@@ -241,14 +240,21 @@ echo "Script Complete!"
         clear
 
         sudo dnf install gcc g++ -y
+        clear
 
         sudo dnf install nodejs -y
+        clear
 
         sudo dnf install lua -y
+        clear
 
         sudo dnf install python3 python-pip -y
+        python -m pip install --upgrade pip
+        clear
   
         sudo dnf install ruby  -y
+        gem update
+        clear
 
         sudo dnf install update -y
 
