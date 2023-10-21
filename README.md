@@ -21,6 +21,9 @@ Ubuntu | Debian | Arch | Kali Linux | Parrot OS | Linux Mint | Fedora
   chmod +X script.sh or chmod 777 script.sh       
 ```
 
+> [!Note]
+> You need install lsb-release for work, see in requeriments.txt
+
 ## Usage
 
 ```sh
