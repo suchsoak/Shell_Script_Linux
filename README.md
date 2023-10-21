@@ -24,6 +24,26 @@ Ubuntu | Debian | Arch | Kali Linux | Parrot OS | Linux Mint | Fedora
 > [!Note]
 > You need install lsb-release for work, see in requeriments.txt
 
+## Docker
+
+Arch Linux
+
+```sh
+   pacman -Sy --noc && pacman -S sudo --noc && pacman -S git --noc && pacman -S nano --noc && sudo pacman -S lsb-release --noc && clear && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod +X script.sh && clear && bash script.sh
+```
+
+Ubuntu - Debian
+
+```sh
+   apt update && apt install git -y && apt install sudo -y && sudo apt insall lsb-release -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh
+```
+
+Fedora Linux
+
+```sh
+   dnf update -y && dnf install git -y && dnf install sudo -y && sudo dnf install redhat-lsb-core -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh  
+```
+
 ## Usage
 
 ```sh
