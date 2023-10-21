@@ -24,7 +24,7 @@ Ubuntu | Debian | Arch | Kali Linux | Parrot OS | Linux Mint | Fedora
 ## Usage
 
 ```sh
-  bash ./script.sh or ./script.sh
+  bash script.sh
 ```
 # Packages | Programming language 
 
