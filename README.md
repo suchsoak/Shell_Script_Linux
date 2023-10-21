@@ -14,7 +14,7 @@ Ubuntu | Debian | Arch | Kali Linux | Parrot OS | Linux Mint | Fedora
 > with Git
 
 ```sh
-  git clone https://github.com/suchsoak/Shell_Scirpt_Linux.git
+  git clone https://github.com/suchsoak/Shell_Script_Linux.git
 ```
 
 ```sh
