@@ -22,7 +22,7 @@ Ubuntu | Debian | Arch | Kali Linux | Parrot OS | Linux Mint | Fedora
 ```
 
 > [!Note]
-> You need install lsb-release for work, see in requeriments.txt
+> You need install lsb-release for work, see in requirements.txt
 
 ## Docker
 
