@@ -44,6 +44,17 @@ Fedora Linux
    dnf update -y && dnf install git -y && dnf install sudo -y && sudo dnf install redhat-lsb-core -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh  
 ```
 
+# Termux
+
+> Android
+
+>  [!Note]
+> For termux i will use "uname"
+
+```sh
+elif [ "$(uname -o)" == "Android" ]; then
+```
+
 ## Usage
 
 ```sh
