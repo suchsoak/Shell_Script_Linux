@@ -5,6 +5,9 @@ This script is under development
 
 Before starting script recommended to update the system before
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/m100047r)
+
+
 # Linux
 
 Ubuntu | Debian | Arch | Kali Linux | Parrot OS | Linux Mint | Fedora
@@ -96,4 +99,5 @@ elif [ "$(uname -o)" == "Android" ]; then
 | Docker   | https://www.docker.com/
 | RPM   | https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/RPM/
 | lsb-release  | https://www.howtogeek.com/691214/how-to-check-the-linux-kernel-and-operating-system-version/ or https://manpages.debian.org/bullseye/lsb-release/lsb_release.1.en.html
+
 
