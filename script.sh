@@ -1,5 +1,6 @@
 #!/bin/bash/
-
+echo 
+echo
 echo "  _________/\            __   __                         __         __   "
 echo " /   _____/  |__   ____ |  | |  |    ______ ____ _______|__|_____ _/  |_ "
 echo " \_____  \|  |  \_/ __ \|  | |  |   /  ___// ___\\_  __ \  |____ \\   __\ "
@@ -7,6 +8,8 @@ echo " /        \      \  ___/_  |__  |__ \___ \\  \___ |  | \/  |  |_\ \|  |  "
 echo "/_______  /___|  /\___  /____/____//____  \\___  /|__|  |__|   ___/|__|  "
 echo "        \/     \/     \/                \/     \/          |__|"
 echo "                   Github: https://github.com/suchsoak                   "   
+
+sleep 3 > /dev/null
 
 if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ]; then
 
@@ -148,7 +151,7 @@ echo "Script Complete!"
     clear
     neofetch
 
-    sleep 2 > /dev/null
+    sleep 3 > /dev/null
 
     clear
   
@@ -174,8 +177,7 @@ echo "Script Complete!"
     python -m pip install --upgrade pip
 
     sleep 4 > /dev/null
-
-
+    
     sudo pacman -S ruby  --noconfirm
 
     sudo pacman -Sy --noconfirm
@@ -235,7 +237,7 @@ echo "Script Complete!"
 
         neofetch
 
-        sleep 1 > /dev/null
+        sleep 3 > /dev/null
 
         clear
 
@@ -272,6 +274,90 @@ echo "Script Complete!"
         echo
         echo "Script Complet!"
         echo
+  elif [ "$(uname -o)" == "Android" ]; then
+
+    clear
+
+    sudo pkg update 
+
+    clear
+
+    echo
+    echo Packages
+    echo
+    sleep 3 > /dev/null
+    clear
+
+    sudo apt install make -y
+    sudo pkg install curl -y
+    sudo pkg install wget -y
+    sudo pkg install git -y
+    sudo pkg install vim -y
+    sudo pkg install net-tools -y
+    sudo pkg install ssh -y
+    sudo pkg install neofetch -y
+    sudo pkg install inxi -y
+    sudo pkg install git -y
+    sudo pkg install smartmontools -y
+    sudo pkg install docker.io -y
+
+    clear
+
+    neofetch
+
+    sleep 4 > /dev/null
+
+    clear
+
+    echo
+    echo Gcc and dependencies
+    echo
+    sleep 3 > /dev/null
+    clear
+    sudo pkg-get install build-essential gcc g++ -y
+
+    sudo pkg install nodejs -y
+
+    clear
+    echo
+    echo Python
+    echo
+    sleep 3 > /dev/null
+    sudo pkg install python3 python-pip  -y
+    sudo pkg install pip -y
+    python -m pip install --upgrade pip
+
+    clear
+
+    echo
+    echo Ruby
+    echo
+    sleep 3 > /dev/null
+    sudo pkg install ruby -y
+    clear
+    sudo pkg update -y
+    clear
+    echo
+    echo Java
+    echo
+    sleep 3 > /dev/null
+    sudo pkg install default-jdk -y
+    sudo pkg install default-jre -y
+
+    clear
+
+    echo
+    echo Sql
+    echo
+    sleep 3 > /dev/null
+
+    sudo pkg install mysql-server -y
+
+    sudo pkg install postgresql -y
+    clear
+    echo
+    echo "Script Complet!"
+    echo
 
 else
     echo "Operating system not supported by this script."
