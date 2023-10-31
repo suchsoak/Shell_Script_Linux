@@ -177,7 +177,7 @@ echo "Script Complete!"
     python -m pip install --upgrade pip
 
     sleep 4 > /dev/null
-    
+
     sudo pacman -S ruby  --noconfirm
 
     sudo pacman -Sy --noconfirm
@@ -288,18 +288,18 @@ echo "Script Complete!"
     sleep 3 > /dev/null
     clear
 
-    sudo apt install make -y
-    sudo pkg install curl -y
-    sudo pkg install wget -y
-    sudo pkg install git -y
-    sudo pkg install vim -y
-    sudo pkg install net-tools -y
-    sudo pkg install ssh -y
-    sudo pkg install neofetch -y
-    sudo pkg install inxi -y
-    sudo pkg install git -y
-    sudo pkg install smartmontools -y
-    sudo pkg install docker.io -y
+     pkg install make -y
+     pkg install curl -y
+     pkg install wget -y
+     pkg install git -y
+     pkg install vim -y
+     pkg install net-tools -y
+     pkg install ssh -y
+     pkg install neofetch -y
+     pkg install inxi -y
+     pkg install git -y
+     pkg install smartmontools -y
+     pkg install docker.io -y
 
     clear
 
@@ -314,17 +314,17 @@ echo "Script Complete!"
     echo
     sleep 3 > /dev/null
     clear
-    sudo pkg-get install build-essential gcc g++ -y
+     pkg install build-essential gcc g++ -y
 
-    sudo pkg install nodejs -y
+     pkg install nodejs -y
 
     clear
     echo
     echo Python
     echo
     sleep 3 > /dev/null
-    sudo pkg install python3 python-pip  -y
-    sudo pkg install pip -y
+     pkg install python3 python-pip  -y
+     pkg install pip -y
     python -m pip install --upgrade pip
 
     clear
@@ -333,27 +333,23 @@ echo "Script Complete!"
     echo Ruby
     echo
     sleep 3 > /dev/null
-    sudo pkg install ruby -y
+     pkg install ruby -y
     clear
-    sudo pkg update -y
+     pkg update -y
     clear
     echo
     echo Java
     echo
     sleep 3 > /dev/null
-    sudo pkg install default-jdk -y
-    sudo pkg install default-jre -y
-
+     pkg install default-jdk -y
+     pkg install default-jre -y
     clear
-
     echo
     echo Sql
     echo
     sleep 3 > /dev/null
-
-    sudo pkg install mysql-server -y
-
-    sudo pkg install postgresql -y
+     pkg install mysql-server -y
+     pkg install postgresql -y
     clear
     echo
     echo "Script Complet!"
