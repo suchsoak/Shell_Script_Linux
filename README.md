@@ -51,6 +51,8 @@ Fedora Linux
 >  [!Note]
 > For termux i will use "uname"
 
+> Script for Termux still in development
+
 ```sh
 elif [ "$(uname -o)" == "Android" ]; then
 ```
