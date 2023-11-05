@@ -1,9 +1,10 @@
 # Shell_Script_Linux
-This is a shell script for you to have everything when formatting your linux
 
-This script is under development
+**This is a shell script for you to have everything when formatting your linux**
 
-Before starting script recommended to update the system before
+**This script is under development**
+
+**Before starting script recommended to update the system before**
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/m100047r)
 
@@ -21,7 +22,13 @@ Ubuntu | Debian | Arch | Kali Linux | Parrot OS | Linux Mint | Fedora
 ```
 
 ```sh
-  chmod +X script.sh or chmod 777 script.sh       
+  chmod +X script.sh  
+```
+
+### OR
+
+```sh
+ chmod 777 script.sh 
 ```
 
 > [!Note]
