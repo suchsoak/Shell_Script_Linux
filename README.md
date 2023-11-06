@@ -1,10 +1,12 @@
 # Shell_Script_Linux
+!["Shell"](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
 **This is a shell script for you to have everything when formatting your linux**
 
 **This script is under development**
 
 **Before starting script recommended to update the system before**
+
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/m100047r)
 
