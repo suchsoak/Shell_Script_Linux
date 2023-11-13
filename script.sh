@@ -1,13 +1,21 @@
 #!/bin/bash/
+clear
 echo 
-echo
-echo "  _________/\            __   __                         __         __   "
-echo " /   _____/  |__   ____ |  | |  |    ______ ____ _______|__|_____ _/  |_ "
-echo " \_____  \|  |  \_/ __ \|  | |  |   /  ___// ___\\_  __ \  |____ \\   __\ "
-echo " /        \      \  ___/_  |__  |__ \___ \\  \___ |  | \/  |  |_\ \|  |  "
-echo "/_______  /___|  /\___  /____/____//____  \\___  /|__|  |__|   ___/|__|  "
-echo "        \/     \/     \/                \/     \/          |__|"
-echo "                   Github: https://github.com/suchsoak                   "   
+echo 
+packscript=$(cat << "script"
+ ___  ___   ___  _  __ ___   ___  ___  ___  ___  _____ 
+| _ \/   \ / __|| |/ // __| / __|| _ \|_ _|| _ \|_   _|
+|  _/| - || (__ |   < \__ \| (__ |   / | | |  _/  | |  
+|_|  |_|_| \___||_|\_\|___/ \___||_|_\|___||_|    |_|  
+
+Github: github.com/suchsoak
+BY: suchsoak
+V:1.0.0
+
+script
+)
+
+echo "$packscript"
 
 sleep 3 > /dev/null
 
@@ -274,11 +282,13 @@ echo "Script Complete!"
         echo
         echo "Script Complet!"
         echo
+
   elif [ "$(uname -o)" == "Android" ]; then
 
     clear
 
-    sudo pkg update 
+    pkg update 
+    pkg upgrade -y
 
     clear
 
@@ -294,13 +304,24 @@ echo "Script Complete!"
      pkg install git -y
      pkg install vim -y
      pkg install net-tools -y
-     pkg install ssh -y
+     pkg install openssh -y
      pkg install neofetch -y
      pkg install inxi -y
      pkg install git -y
-     pkg install smartmontools -y
-     pkg install docker.io -y
-
+     clear
+      echo
+      echo Docker
+      echo
+      sleep 3 > /dev/null
+      clear
+        pkg install qemu-utils qemu-common qemu-system-x86_64-headless
+        mkdir alpine && cd alpine
+        wget http://dl-cdn.alpinelinux.org/alpine/v3.12/releases/x86_64/alpine-virt-3.12.3-x86_64.iso
+        qemu-img create -f qcow2 alpine.img 4G
+        qemu-system-x86_64 -machine q35 -m 1024 -smp cpus=2 -cpu qemu64 \
+        -drive if=pflash,format=raw,read-only,file=$PREFIX/share/qemu/edk2-x86_64-code.fd \
+        -netdev user,id=n1,hostfwd=tcp::2222-:22 -device virtio-net,netdev=n1 \
+        -cdrom alpine-virt-3.12.3-x86_64.iso -nographic alpine.img
     clear
 
     neofetch
@@ -314,7 +335,7 @@ echo "Script Complete!"
     echo
     sleep 3 > /dev/null
     clear
-     pkg install build-essential gcc g++ -y
+     pkg install build-essential  -y
 
      pkg install nodejs -y
 
@@ -341,20 +362,62 @@ echo "Script Complete!"
     echo Java
     echo
     sleep 3 > /dev/null
-     pkg install default-jdk -y
-     pkg install default-jre -y
+    pkg install openjdk-17 -y
+    clear
+    sleep 4 > /dev/null
+    java -version
     clear
     echo
     echo Sql
     echo
     sleep 3 > /dev/null
-     pkg install mysql-server -y
      pkg install postgresql -y
     clear
-    echo
-    echo "Script Complet!"
-    echo
 
+    nethunter=$(cat << "EOF"
+    _  __ ___  _     ___                   _    _                 _             
+    | |/ //   \| |   |_ _|       _ _   ___ | |_ | |_   _  _  _ _  | |_  ___  _ _ 
+    |   < | - || |__  | |       | ' \ / -_)|  _||   \ | || || ' \ |  _|/ -_)| '_|
+    |_|\_\|_|_||____||___|      |_||_|\___| \__||_||_| \_._||_||_| \__|\___||_|  
+
+    [1] Nethunter Install
+    [2] No Install 
+EOF
+)
+
+  echo "$nethunter"
+
+# https://www.kali.org/docs/nethunter/nethunter-rootless/
+    
+    read op
+
+    case &op in
+
+    1 
+      echo "Nethunter Install"
+      sleep 1 > /dev/null
+      termux-setup-storage
+      wget -O install-nethunter-termux https://offs.ec/2MceZWr
+      chmod +x install-nethunter-termux
+      ./install-nethunter-termux
+      sleep 1 >/dev/null
+      clear
+      echo
+      echo "Put a Password"
+      echo
+      nethunter kex passwd
+      sleep 1 > /dev/null
+      clear
+      neofetch
+      ;;
+    2
+      echo "No Nethunter"
+      exit
+      ;;  
+    esac
+    echo
+    echo -e "\e[31mScript Complet!\e[0m"
+    echo
 else
     echo "Operating system not supported by this script."
 fi
