@@ -314,7 +314,7 @@ echo "Script Complete!"
       echo
       sleep 3 > /dev/null
       clear
-        pkg install qemu-utils qemu-common qemu-system-x86_64-headless
+        pkg install qemu-utils qemu-common qemu-system-x86_64-headless -y
         mkdir alpine && cd alpine
         wget http://dl-cdn.alpinelinux.org/alpine/v3.12/releases/x86_64/alpine-virt-3.12.3-x86_64.iso
         qemu-img create -f qcow2 alpine.img 4G
