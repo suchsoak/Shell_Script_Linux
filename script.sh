@@ -337,6 +337,10 @@ echo "Script Complete!"
     clear
      pkg install build-essential  -y
 
+    echo
+    echo NodeJs
+    echo
+
      pkg install nodejs -y
 
     clear
@@ -345,7 +349,6 @@ echo "Script Complete!"
     echo
     sleep 3 > /dev/null
      pkg install python3 python-pip  -y
-     pkg install pip -y
     python -m pip install --upgrade pip
 
     clear
@@ -375,10 +378,10 @@ echo "Script Complete!"
     clear
 
 nethunter=$(cat << "EOF"
-    _ __ ___ _     ___                   _    _                 _             
-    | |/ //   \| |   |_ _|       _ _   ___ | |_ | |_   _ _ _ _ | |_ ___ _ _ 
-    |   < | - || |__ | |       | ' \ / -_)| _||   \ | || || ' \ | _|/ -_)| '_|
-    |_|\_\|_|_||____||___|      |_||_|\___| \__||_||_| \_._||_||_| \__|\___||_|  
+_ __ ___ _     ___                   _    _                 _             
+| |/ //   \| |   |_ _|       _ _   ___ | |_ | |_   _ _ _ _ | |_ ___ _ _ 
+|   < | - || |__ | |       | ' \ / -_)| _||   \ | || || ' \ | _|/ -_)| '_|
+|_|\_\|_|_||____||___|      |_||_|\___| \__||_||_| \_._||_||_| \__|\___||_|  
 
     [1] Nethunter Install
     [2] No Install 
@@ -406,9 +409,6 @@ case $op in
     ./install-nethunter-termux
     sleep 1 >/dev/null
     clear
-    echo
-    echo "Put a Password"
-    echo
     nethunter kex passwd
     sleep 1 > /dev/null
     clear
