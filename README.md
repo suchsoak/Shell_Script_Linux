@@ -1,4 +1,6 @@
-# Shell_Script_Linux
+
+# PACKSCRIPT
+
 !["Shell"](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
 **This is a shell script for you to have everything when formatting your linux**
@@ -69,6 +71,21 @@
 ```sh
 elif [ "$(uname -o)" == "Android" ]; then
 ```
+### Kali Nethunter
+
+```sh
+    _  __ ___  _     ___                   _    _                 _             
+    | |/ //   \| |   |_ _|       _ _   ___ | |_ | |_   _  _  _ _  | |_  ___  _ _ 
+    |   < | - || |__  | |       | ' \ / -_)|  _||   \ | || || ' \ |  _|/ -_)| '_|
+    |_|\_\|_|_||____||___|      |_||_|\___| \__||_||_| \_._||_||_| \__|\___||_|  
+
+    [1] Nethunter Install
+    [2] No Install 
+```
+
+Details
+
+https://github.com/suchsoak/Shell_Script_Linux/releases/tag/V.1.0.0
 
 ## Usage
 
@@ -93,6 +110,8 @@ elif [ "$(uname -o)" == "Android" ]; then
   libwacom-common
   Docker or Docker.io
   rpm (for fedora)
+  qemu-utils (for termux)
+  openjdk-17 (for termux)
   Visual Code studio
   Brave Browser
 ```
