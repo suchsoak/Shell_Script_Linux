@@ -128,6 +128,7 @@ https://github.com/suchsoak/Shell_Script_Linux/releases/tag/V.1.0.0
 | Docker   | https://www.docker.com/
 | RPM   | https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/RPM/
 | lsb-release  | https://www.howtogeek.com/691214/how-to-check-the-linux-kernel-and-operating-system-version/ or https://manpages.debian.org/bullseye/lsb-release/lsb_release.1.en.html
+| Kali Nethunter   | https://www.kali.org/docs/nethunter/nethunter-rootless/
 
 # License & Copyright
 BSD 3-Clause "New" or "Revised" License
