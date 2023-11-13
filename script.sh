@@ -374,10 +374,10 @@ echo "Script Complete!"
      pkg install postgresql -y
     clear
 
-    nethunter=$(cat << "EOF"
-    _  __ ___  _     ___                   _    _                 _             
-    | |/ //   \| |   |_ _|       _ _   ___ | |_ | |_   _  _  _ _  | |_  ___  _ _ 
-    |   < | - || |__  | |       | ' \ / -_)|  _||   \ | || || ' \ |  _|/ -_)| '_|
+nethunter=$(cat << "EOF"
+    _ __ ___ _     ___                   _    _                 _             
+    | |/ //   \| |   |_ _|       _ _   ___ | |_ | |_   _ _ _ _ | |_ ___ _ _ 
+    |   < | - || |__ | |       | ' \ / -_)| _||   \ | || || ' \ | _|/ -_)| '_|
     |_|\_\|_|_||____||___|      |_||_|\___| \__||_||_| \_._||_||_| \__|\___||_|  
 
     [1] Nethunter Install
@@ -385,36 +385,46 @@ echo "Script Complete!"
 EOF
 )
 
-  echo "$nethunter"
+echo "$nethunter"
 
-# https://www.kali.org/docs/nethunter/nethunter-rootless/
-    
-    read op
+# Declare op
+op=0
 
-    case &op in
+while [[ $op -ne 1 && $op -ne 2 ]]
+do
+    read -p "Select an option [1-2]: " op
+done
 
-    1 
-      echo "Nethunter Install"
-      sleep 1 > /dev/null
-      termux-setup-storage
-      wget -O install-nethunter-termux https://offs.ec/2MceZWr
-      chmod +x install-nethunter-termux
-      ./install-nethunter-termux
-      sleep 1 >/dev/null
-      clear
-      echo
-      echo "Put a Password"
-      echo
-      nethunter kex passwd
-      sleep 1 > /dev/null
-      clear
-      neofetch
-      ;;
-    2
-      echo "No Nethunter"
-      exit
-      ;;  
-    esac
+case $op in
+
+1)
+    echo "Nethunter Install"
+    sleep 1 > /dev/null
+    termux-setup-storage
+    wget -O install-nethunter-termux https://offs.ec/2MceZWr
+    chmod +x install-nethunter-termux
+    ./install-nethunter-termux
+    sleep 1 >/dev/null
+    clear
+    echo
+    echo "Put a Password"
+    echo
+    nethunter kex passwd
+    sleep 1 > /dev/null
+    clear
+    # Install neofetch if not installed
+    if [ -z "$(command -v neofetch)" ]; then
+        pkg install neofetch
+    fi
+    neofetch
+    ;;
+
+2)
+    echo "No Nethunter"
+    exit
+    ;;  
+
+esac
     echo
     echo -e "\e[31mScript Complet!\e[0m"
     echo
