@@ -84,8 +84,10 @@ elif [ "$(uname -o)" == "Android" ]; then
 ```
 
 Details
+| Details |  Link |
+| ------ | ------ |
+| Kali Nethunter | https://github.com/suchsoak/Shell_Script_Linux/releases/tag/V.1.0.0
 
-https://github.com/suchsoak/Shell_Script_Linux/releases/tag/V.1.0.0
 
 ## Usage
 
