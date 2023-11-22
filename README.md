@@ -104,7 +104,7 @@ elif [ "$(uname -o)" == "Android" ]; then
 ```sh
   bash script.sh
 ```
-# Packages | Programming language 
+# Packages | Programming language | Hacking tools
 
 ```sh            
   curl             | Ruby (gem)    | namp
