@@ -39,6 +39,8 @@
 
 > [!IMPORTANT]  
 > You need install lsb-release for work, see in requirements.txt
+> 
+> redhat-lsb-core (for fedora)
 
 ## Docker
 
