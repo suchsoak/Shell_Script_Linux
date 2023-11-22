@@ -1,1 +1,2 @@
 lsb-release
+redhat-lsb-core (for fedora linux)
