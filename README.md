@@ -53,7 +53,7 @@
 **Ubuntu - Debian**
 
 ```sh
-   apt update && apt install git -y && apt install sudo -y && sudo apt insall lsb-release -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh
+   apt update && apt install git -y && apt install sudo -y && sudo apt install lsb-release -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh
 ```
 
 **Fedora Linux**
