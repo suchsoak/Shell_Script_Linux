@@ -4,10 +4,11 @@
 !["Shell"](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
 **This is a shell script for you to have everything when formatting your linux**
+>[!TIP]
+>Before starting script recommended to update the system before
 
 **This script is under development**
 
-**Before starting script recommended to update the system before**
 
 # Linux
 !["Linux"](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
@@ -36,7 +37,7 @@
  chmod 777 script.sh 
 ```
 
-> [!Note]
+> [!IMPORTANT]  
 > You need install lsb-release for work, see in requirements.txt
 
 ## Docker
