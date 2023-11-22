@@ -107,7 +107,7 @@ elif [ "$(uname -o)" == "Android" ]; then
 # Packages | Programming language | Hacking tools
 
 ```sh            
-  curl             | Ruby (gem)    | namp
+  curl             | Ruby (gem)    | nmap
   wget             | Lua           | aircrack-ng
   git              | gcc           | wifite
   vim              | g++           | sqlmap
