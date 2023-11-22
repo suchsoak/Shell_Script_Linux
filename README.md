@@ -74,16 +74,23 @@ elif [ "$(uname -o)" == "Android" ]; then
 ### Kali Nethunter
 
 ```sh
-    _  __ ___  _     ___                   _    _                 _             
-    | |/ //   \| |   |_ _|       _ _   ___ | |_ | |_   _  _  _ _  | |_  ___  _ _ 
-    |   < | - || |__  | |       | ' \ / -_)|  _||   \ | || || ' \ |  _|/ -_)| '_|
-    |_|\_\|_|_||____||___|      |_||_|\___| \__||_||_| \_._||_||_| \__|\___||_|  
+      ...           
+   ...~:+o+        
+    ......++::::    
+         ~o    :+   
+          +:::::.   
+              ~:~  
+                 .  
+ _ __ ____  __    ___                             
+| |/ //   \| |   |_ _|       
+|   < | - || |__ |   |       
+|_|\_\|_|_||____||___|   
 
     [1] Nethunter Install
     [2] No Install 
+
 ```
 
-Details
 | Details |  Link |
 | ------ | ------ |
 | Kali Nethunter | https://github.com/suchsoak/Shell_Script_Linux/releases/tag/V.1.0.0
@@ -97,23 +104,33 @@ Details
 # Packages | Programming language 
 
 ```sh            
-  curl             | Ruby (gem)
-  wget             | Lua
-  git              | gcc 
-  vim              | g++
-  net-tools        | Nodejs
-  neofetch         | Python (pip) 
-  inxi             | SQL
-  smartmontools    | Java
-  wireless_tools   
-  xdg-utils
-  lsb-release
-  libwacom-bin
-  libwacom-common
-  Docker or Docker.io
-  rpm (for fedora)
+  curl             | Ruby (gem)    | namp
+  wget             | Lua           | aircrack-ng
+  git              | gcc           | wifite
+  vim              | g++           | sqlmap
+  net-tools        | Nodejs        | dnsrecon
+  neofetch         | Python (pip)  | tor and tor broweser (Not for termux)
+  inxi             | SQL           | hydra
+  smartmontools    | Java          | proxychains
+  wireless_tools                   | host (Ubuntu and Debian)
+  xdg-utils                        | mcrypt (Ubuntu, debian and fedora)
+  lsb-release                      | wireshark, wireshark-qt and wireshark-cli for archlinux
+  libwacom-bin                     | netcat
+  libwacom-common                  | wpscan
+  Docker or Docker.io              | metasploit
+  rpm (for fedora)                 | john  
+  iw (for fedora)
+  java-latest-openjdk (for fedora)                  
+  snap (Ubuntu, debian and fedora)
+  htop
   qemu-utils (for termux)
   openjdk-17 (for termux)
+  libcap-ng (for termux)
+  nmh (for termux)
+  tsduck-tools (for termux)
+  lvm2 (for termux)
+  qemu-utils (for termux)
+  mailutils (for termux)
   Visual Code studio
   Brave Browser
 ```
@@ -131,10 +148,7 @@ Details
 | RPM   | https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/RPM/
 | lsb-release  | https://www.howtogeek.com/691214/how-to-check-the-linux-kernel-and-operating-system-version/ or https://manpages.debian.org/bullseye/lsb-release/lsb_release.1.en.html
 | Kali Nethunter   | https://www.kali.org/docs/nethunter/nethunter-rootless/
+| Hacking Tools   | https://github.com/suchsoak/Shell_Script_Linux/releases/tag/V.1.0.1
 
 # License & Copyright
 BSD 3-Clause "New" or "Revised" License
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/m100047r)
-
-
