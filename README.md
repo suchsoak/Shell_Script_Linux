@@ -62,6 +62,27 @@
    dnf update -y && dnf install git -y && dnf install sudo -y && sudo dnf install redhat-lsb-core -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh  
 ```
 
+### **Dockerfile**
+
+```sh
+  https://github.com/suchsoak/Shell_Script_Linux/tree/main/docker/linux
+```
+
+### Usage
+
+```sh
+
+  sudo docker build -f < Distro >.Dockerfile -t < Distro_name > .
+
+```
+**or**
+
+With Makefile
+
+```sh
+make
+```
+
 # Termux
 
 !["Android"](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
