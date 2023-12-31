@@ -21,7 +21,7 @@
 
 ## Install
 
-> with Git
+> With Git
 
 ```sh
   git clone https://github.com/suchsoak/Shell_Script_Linux.git
@@ -73,10 +73,12 @@
 ```
 **or**
 
-With Makefile
+With `Makefile`
 
 ```sh
+
 make
+
 ```
 
 | Dockerfiles |  Links |
@@ -95,6 +97,7 @@ make
 ```sh
 elif [ "$(uname -o)" == "Android" ]; then
 ```
+
 ### Kali Nethunter
 
 ```sh
@@ -125,6 +128,7 @@ elif [ "$(uname -o)" == "Android" ]; then
 ```sh
   bash script.sh
 ```
+
 # Packages | Programming language | Hacking tools
 
 ```sh            
@@ -175,4 +179,4 @@ elif [ "$(uname -o)" == "Android" ]; then
 | Hacking Tools   | https://github.com/suchsoak/Shell_Script_Linux/releases/tag/V.1.0.1
 
 # License & Copyright
-BSD 3-Clause "New" or "Revised" License
+`BSD 3-Clause "New" or "Revised" License`
