@@ -16,7 +16,7 @@ packscript=$(cat << "script"
 
 Github: github.com/suchsoak
 BY: suchsoak
-V:1.0.1
+V:1.0.2
 
 script
 )
@@ -457,6 +457,174 @@ browser
         echo "Script Complet!"
         echo
 
+  elif [ "$(lsb_release -si)" == "openSUSE" ]; then
+
+clear 
+opensuse=$(cat << "suse"
+
++----------------------------------------+
+|                                        |
+|             ==o========oo=             |
+|         =o==================o          |
+|       ==========================       |
+|      ====o  =====================      |
+|         =             =o===========    |
+|                    =o===oo=o========   |
+|                   ==o===o==  =======   |
+|                  ===  === ==  =======  |
+|                  ===   = ===  ======o  |
+|             ====  ===o=o===    =====o  |
+|             ========oooo=    =o======  |
+|                ========ooo==========   |
+|                     =oo==oo=========   |
+|                           =========    |
+|       =====oo=====oo=============      |
+|       ==========================       |
+|          ====================          |
+|             ==============             |
+|                                        |
++----------------------------------------+
+
+
+suse
+)
+
+
+sudo zypper install -y make 
+sudo zypper install -y curl 
+sudo zypper install -y wget 
+sudo zypper install -y git 
+sudo zypper install -y vim 
+sudo zypper install -y net-tools 
+sudo zypper install -y openssh 
+sudo zypper install -y neofetch 
+sudo zypper install -y inxi 
+sudo zypper install -y smartmontools 
+sudo zypper install -y docker
+clear
+
+neofetch
+
+sleep 4 > /dev/null
+
+clear
+
+echo
+echo Gcc and dependencies
+echo
+sleep 3 > /dev/null
+
+clear
+
+sudo zypper install -y  gcc  
+
+clear
+echo
+echo Java
+echo
+
+sudo zypper install -y nodejs 
+
+clear
+echo
+echo Python
+echo
+
+sleep 3 > /dev/null
+
+sudo zypper install -y python
+sudo zypper in -y python3-pip
+sudo zypper install -y python3   
+python -m pip install --upgrade pip
+
+clear
+
+echo
+echo Ruby
+echo
+
+sleep 3 > /dev/null
+sudo zypper in -y ruby 
+sudo gem update --system
+clear
+sudo zypper -y update 
+
+sleep 3 > /dev/null
+
+clear
+
+echo
+echo Sql
+echo
+sleep 3 > /dev/null
+
+sudo zypper in -y mysql-server 
+
+sudo zypper in -y postgresql 
+
+clear
+sudo zypper refresh
+sudo zypper verify
+sudo zypper update
+clear
+
+code=$(cat << "visual"
+        +------------------------------+
+        |ooooooooooooooooooo+:..++ooooo|
+        |ooooooooooooooooo+:.   ...::++|
+        |ooooooooooooooo+.      ... ..:|
+        |oo+++oooooooo:.       .......:|
+        |+:  ..:+oo+:        :+:......:|
+        |o+:.    ...      .:ooo:.......|
+        |ooo+:. . .    .:+ooooo:.......|
+        |ooo+:     .   .+oooooo+... ..:|
+        |o+.     ...  .  .:+ooo:......:|
+        |+.    .+oo+:.  .   .:+:.. ....|
+        |oo+::ooooooo+:..    ..........|
+        |ooooooooooooooo+:. .  .......:|
+        |ooooooooooooooooo+:.  .....:+o|
+        |ooooooooooooooooooo+:..:++oooo|
+        +------------------------------+
+visual
+)
+        clear
+        echo "$code"
+
+        zypper ar obs://devel:tools:ide:vscode devel_tools_ide_vscode
+        sudo zypper in -d -y code
+        clear
+        sudo zypper refresh && sudo zypper update
+
+
+        clear
+        brave=$(cat << "browser"
+        +------------------------------+
+        |ooo=o=oo=o=::::::::=ooooooooo=|
+        |oooooo==::..       .~::=o=oooo|
+        |o=ooo:...::~::::~~~:~  .~oo=oo|
+        |ooooo~.~=oo==oooo==oo:. .=ooo=|
+        |oooo=..=oooo::oo~:=ooo~ .=ooo=|
+        |ooooo~.~=ooo:=oo~:ooo~  .ooooo|
+        |=oooo=...~oo==::=ooo~   =ooooo|
+        |ooo=oo~..~ooo=~~=oo=   ~oo=ooo|
+        |oo=ooo=...~~==oo=:.   .=oooooo|
+        |ooooooo:~...~:o=~.    ~oooo=oo|
+        |o=ooooo=:~~....     .:oo=oooo=|
+        |ooo=oooooo=:~... ~:=oooooooooo|
+        |ooooooooooooo=::==oooooooo=o=o|
+        +------------------------------+
+browser
+)
+        echo "$brave"
+        sleep 3 > /dev/null
+        sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+        sudo rpm --import https://brave-browser-rpm-beta.s3.brave.com/brave-core-nightly.asc
+        sudo zypper addrepo --refresh https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave-browser
+        sudo zypper addrepo --refresh https://brave-browser-rpm-beta.s3.brave.com/x86_64/ brave-browser-beta
+        sudo zypper addrepo --refresh https://brave-browser-rpm-nightly.s3.brave.com/x86_64/ brave-browser-nightly
+        sudo zypper in -y brave-browser
+
+
   elif [ "$(uname -o)" == "Android" ]; then
 clear
   android=$(cat << "droid"
@@ -717,16 +885,25 @@ echo
 echo Ruby
 echo
 sleep 3 > /dev/null
+
 sudo apt install ruby -y
+
 sudo gem update --system
+
+
 sudo apt install build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev  libgmp-dev zlib1g-dev -y
 clear
+
 sudo apt update -y
+
 clear
+
 echo
 echo Java
 echo
+
 sleep 3 > /dev/null
+
 sudo apt install default-jdk -y
 sudo apt install default-jre -y
 
@@ -735,6 +912,7 @@ clear
 echo
 echo Sql
 echo
+
 sleep 3 > /dev/null
 
 sudo apt-get install mysql-server -y
@@ -742,8 +920,11 @@ sudo apt-get install mysql-server -y
 sudo apt-get install postgresql -y
 
 clear
+
 sudo apt update
+
 clear
+
 Hackingtools=$(cat << "tools"
  _  _  ___   ___  _  __ ___  _  _   ___ 
 | || |/   \ / __|| |/ /|_ _|| \| | / __|
@@ -1510,6 +1691,333 @@ cd ..
         echo "All tools installed!! have good day hacker!!"
         echo
 
+ elif [ "$(lsb_release -si)" == "openSUSE" ]; then
+
+clear 
+opensuse=$(cat << "suse"
+
++----------------------------------------+
+|                                        |
+|             ==o========oo=             |
+|         =o==================o          |
+|       ==========================       |
+|      ====o  =====================      |
+|         =             =o===========    |
+|                    =o===oo=o========   |
+|                   ==o===o==  =======   |
+|                  ===  === ==  =======  |
+|                  ===   = ===  ======o  |
+|             ====  ===o=o===    =====o  |
+|             ========oooo=    =o======  |
+|                ========ooo==========   |
+|                     =oo==oo=========   |
+|                           =========    |
+|       =====oo=====oo=============      |
+|       ==========================       |
+|          ====================          |
+|             ==============             |
+|                                        |
++----------------------------------------+
+
+
+suse
+)
+
+
+sudo zypper install -y make 
+sudo zypper install -y curl 
+sudo zypper install -y wget 
+sudo zypper install -y git 
+sudo zypper install -y vim 
+sudo zypper install -y net-tools 
+sudo zypper install -y openssh 
+sudo zypper install -y neofetch 
+sudo zypper install -y inxi 
+sudo zypper install -y smartmontools 
+sudo zypper install -y docker
+clear
+
+neofetch
+
+sleep 4 > /dev/null
+
+clear
+
+echo
+echo Gcc and dependencies
+echo
+sleep 3 > /dev/null
+
+clear
+
+sudo zypper install -y  gcc  
+
+clear
+echo
+echo Java
+echo
+
+sudo zypper install -y nodejs 
+
+clear
+echo
+echo Python
+echo
+
+sleep 3 > /dev/null
+
+sudo zypper install -y python
+sudo zypper in -y python3-pip
+sudo zypper install -y python3   
+python -m pip install --upgrade pip
+
+clear
+
+echo
+echo Ruby
+echo
+
+sleep 3 > /dev/null
+sudo zypper in -y ruby 
+sudo gem update --system
+clear
+sudo zypper -y update 
+
+sleep 3 > /dev/null
+
+clear
+
+echo
+echo Sql
+echo
+sleep 3 > /dev/null
+
+sudo zypper in -y mysql-server 
+
+sudo zypper in -y postgresql 
+
+clear
+sudo zypper refresh
+sudo zypper verify
+sudo zypper update
+clear
+
+code=$(cat << "visual"
+        +------------------------------+
+        |ooooooooooooooooooo+:..++ooooo|
+        |ooooooooooooooooo+:.   ...::++|
+        |ooooooooooooooo+.      ... ..:|
+        |oo+++oooooooo:.       .......:|
+        |+:  ..:+oo+:        :+:......:|
+        |o+:.    ...      .:ooo:.......|
+        |ooo+:. . .    .:+ooooo:.......|
+        |ooo+:     .   .+oooooo+... ..:|
+        |o+.     ...  .  .:+ooo:......:|
+        |+.    .+oo+:.  .   .:+:.. ....|
+        |oo+::ooooooo+:..    ..........|
+        |ooooooooooooooo+:. .  .......:|
+        |ooooooooooooooooo+:.  .....:+o|
+        |ooooooooooooooooooo+:..:++oooo|
+        +------------------------------+
+visual
+)
+        clear
+        echo "$code"
+
+        zypper ar obs://devel:tools:ide:vscode devel_tools_ide_vscode
+        sudo zypper in -d -y code
+        clear
+        sudo zypper refresh && sudo zypper update
+
+
+        clear
+        brave=$(cat << "browser"
+        +------------------------------+
+        |ooo=o=oo=o=::::::::=ooooooooo=|
+        |oooooo==::..       .~::=o=oooo|
+        |o=ooo:...::~::::~~~:~  .~oo=oo|
+        |ooooo~.~=oo==oooo==oo:. .=ooo=|
+        |oooo=..=oooo::oo~:=ooo~ .=ooo=|
+        |ooooo~.~=ooo:=oo~:ooo~  .ooooo|
+        |=oooo=...~oo==::=ooo~   =ooooo|
+        |ooo=oo~..~ooo=~~=oo=   ~oo=ooo|
+        |oo=ooo=...~~==oo=:.   .=oooooo|
+        |ooooooo:~...~:o=~.    ~oooo=oo|
+        |o=ooooo=:~~....     .:oo=oooo=|
+        |ooo=oooooo=:~... ~:=oooooooooo|
+        |ooooooooooooo=::==oooooooo=o=o|
+        +------------------------------+
+browser
+)
+        echo "$brave"
+        sleep 3 > /dev/null
+        sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+        sudo rpm --import https://brave-browser-rpm-beta.s3.brave.com/brave-core-nightly.asc
+        sudo zypper addrepo --refresh https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave-browser
+        sudo zypper addrepo --refresh https://brave-browser-rpm-beta.s3.brave.com/x86_64/ brave-browser-beta
+        sudo zypper addrepo --refresh https://brave-browser-rpm-nightly.s3.brave.com/x86_64/ brave-browser-nightly
+        sudo zypper in -y brave-browser
+
+        clear
+        Hackingtools=$(cat << "tools"
+
+    _  _  ___   ___  _  __ ___  _  _   ___ 
+    | || |/   \ / __|| |/ /|_ _|| \| | / __|
+    | __ || - || (__ |   <  | | | .  || (_ |
+    |_||_||_|_| \___||_|\_\|___||_|\_| \___| 
+    Github: github.com/suchsoak
+    BY: suchsoak
+    V:1.0.1
+tools
+)
+    echo "$Hackingtools"
+    sleep 3 > /dev/null
+    clear
+
+    wpscan=$(cat << "scan"
+    _______________________________________________________________
+            __          _______   _____
+            \ \        / /  __ \ / ____|
+            \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+            \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+                \  /\  /  | |     ____) | (__| (_| | | | |
+                \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+            WordPress Security Scanner by the WPScan Team
+                        Version 3.8.25
+                                
+        @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+    _______________________________________________________________
+    scan
+    )
+            echo "$wpscan"
+            sleep 2 > /dev/null
+            sudo zypper in -y ruby 
+            sudo gem update --system
+            sudo zypper in -y libxml2-2.10.4-3.fc39.x86_64 
+            sudo gem install wpscan
+            wpscan --update
+            clear
+            sudo zypper in -y git 
+            sudo zypper in -y make 
+            clear
+            sudo zypper in -y snapd
+            sudo zypper in -y update 
+            sudo zypper in -y  nmap 
+            sudo zypper in -y aircrack-ng 
+            sudo zypper in -y hydra 
+            sudo zypper in -y john 
+            sudo zypper in -y hashcat 
+            sudo zypper in -y proxychains-ng 
+            sudo zypper in -y tor 
+            git clone https://github.com/derv82/wifite2.git
+            clear
+            echo
+            echo -e "\e[31mWifite is installed with git, you just need to use: sudo ./wifite.py\e[0m"
+            echo
+            sleep 3 > /dev/null
+            clear
+            wireshark=$(cat << "shark"
+            +------------------------------+
+            |oooooooooooooooooooo++++++++++|
+            |oooooooooooooooo+++::+::::.::+|
+            |oooooooooooo+++++:::::.:.::.+o|
+            |oooooooooo++:++::..::.....:+oo|
+            |ooooooooo+:++:............+ooo|
+            |ooooooo++++::.:...........+ooo|
+            |ooooo++++::............ . oooo|
+            |oooo++++:::....... . .  . oooo|
+            |ooo+::+:........ .   .  ..+ooo|
+            |ooo+++:....... ..  .     .+ooo|
+            |oo+++::........ .         +ooo|
+            |o+:+:....... .            :ooo|
+            |++:+++++++++::::::.....:.::+oo|
+            |++++++++++++++++++++++:++:+:+o|
+            |+++++++++++++++++++++++++++++o|
+            +------------------------------+
+    shark
+            )
+            echo -e "$wireshark"
+            sleep 2 > /dev/null
+            sudo zypper in -y wireshark 
+            git clone https://github.com/sqlmapproject/sqlmap.git
+            cd sqlmap
+            python3 sqlmap.py
+            echo
+            echo "Just Testing"
+            echo
+            sleep 3 > /dev/null
+            cd ..
+            clear
+            tor=$(cat << "tor1"
+                        . ..                        
+                    ... . .......~. ..               
+                ..... ... ...+==+=+:~.. ..            
+            .  ..  . . .  .~::++=o==+:~ . .         
+            . ..  .  .   .       ..~+=o=+.  .        
+        .  .   . .. .. ...~:~~..  ..~+o=+.  .      
+            .   .           .+===o+:..  .:=o=~  .     
+            .      .  .      ..~:=oo+. . ~=o=~       
+    .   .       .    .    .    .~=o=~   .=o=.  .   
+    .                    .+++~   .+oo~   ~oo:      
+            .               +ooo~   .oo+   .=o=.     
+                            .+ooo+    =o=    =o=      
+                            .+oo=:   .=o+   .=o+      
+                            ++:.   .+o=.   ~oo:      
+                                ~=o=~   .=o=.      
+                            ..~:=o=:.   .=o=.       
+                            :====+:.    ~=o=.        
+                            ~~..     .~+o=:          
+                                .~+===+.           
+                            ~~::+=o==+~              
+                            :=+++:~.  
+    tor1
+    )
+            echo "$tor"
+            sleep 2 > /dev/null
+            wget https://www.torproject.org/dist/torbrowser/13.0.1/tor-browser-linux-x86_64-13.0.1.tar.xz
+            tar -xf tor-browser-linux-x86_64-13.0.1.tar.xz
+            cd tor-browser
+            ./start-tor-browser.desktop
+            sleep 2 > /dev/null
+            cd ..
+            clear
+    msfconsole=$(cat << "msf"
+    +--------------------------------------------------+
+    |oooooooooooooooooooooooooooooooooooooooooooooooooo|
+    |ooooooooooooooooooo+o++++++++++ooooooooooooooooooo|
+    |oooooooooooo++:~~~               ~~::+oooooooooooo|
+    |ooooooooooo:                          ~ooooooooooo|
+    |oooo+oooooo~ ~oooo+~          :+o+o+  ~ooooooooooo|
+    |ooooooooooo: ~oooooo+:      :+oooooo  :oooooooooo+|
+    |ooooooooooo: ~ooooooooo: ~:ooooooooo  ~ooooo+ooooo|
+    |ooooooooooo: ~oooo+oooooooooooo+oooo  :ooooooooooo|
+    |ooooooooooo~ ~oooo~ :ooooooo+~ ~oooo  ~ooooooooooo|
+    |o+ooooooooo: ~oooo~   :ooo+~   ~oooo  :ooooooooooo|
+    |ooooooooooo: ~oooo~   ~oooo    :oooo  :ooooooooooo|
+    |ooooooooooo: ~oooo~   ~ooo+    ~ooo+  ~ooooooo+ooo|
+    |ooooooooooo:  oooo~   ~+++:    ~ooo+  :oo+oooooooo|
+    |ooooooooooo+~ ~ooo~            ~oo+~ ~+ooooooooooo|
+    |ooooooooooooo:  :o~            :o:  :+oooooooooooo|
+    |oooo+oooooo+oo+:~~              ~ :+oooooooooooooo|
+    |oooooooooooooooo+:~            ~:+ooooooooooooooo+|
+    |ooooooooooooooooooo+:        ~+ooooooooooooooooooo|
+    |oooooooooooooooooooooo:~  ~:++oooooooooooooooooooo|
+    |oooooo+ooooooooooooooooo++oooooooooooooooooooooooo|
+    |oooooooooooooooooooooooooooooooooooooooooooooo+ooo|
+    +--------------------------------------------------+
+    msf
+    )
+    echo "$msfconsole"
+    sleep 2 > /dev/null
+    curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
+    sleep 2 > /dev/null
+    cd ..
+    echo
+    echo "All tools installed!! have good day hacker!!"
+    echo
+
+
   elif [ "$(uname -o)" == "Android" ]; then
   clear
   android=$(cat << "droid"
@@ -1720,7 +2228,9 @@ fi
     ;;
 
 3)
-# Linux Hacking Tools
+
+# 3) Linux Hacking Tools
+
 if [ "$(lsb_release -si)" == "Debian" ] || [ "$(lsb_release -si)" == "Ubuntu" ] || [ "$(lsb_release -si)" == "Linuxmint" ] || [ "$(lsb_release -si)" == "kali" ]; then
 
 clear
@@ -2264,6 +2774,199 @@ sleep 2 > /dev/null
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
 sleep 2 > /dev/null
 cd ..
+
+  elif [ "$(lsb_release -si)" == "openSUSE" ]; then
+
+    clear 
+    opensuse=$(cat << "suse"
+
+    +----------------------------------------+
+    |                                        |
+    |             ==o========oo=             |
+    |         =o==================o          |
+    |       ==========================       |
+    |      ====o  =====================      |
+    |         =             =o===========    |
+    |                    =o===oo=o========   |
+    |                   ==o===o==  =======   |
+    |                  ===  === ==  =======  |
+    |                  ===   = ===  ======o  |
+    |             ====  ===o=o===    =====o  |
+    |             ========oooo=    =o======  |
+    |                ========ooo==========   |
+    |                     =oo==oo=========   |
+    |                           =========    |
+    |       =====oo=====oo=============      |
+    |       ==========================       |
+    |          ====================          |
+    |             ==============             |
+    |                                        |
+    +----------------------------------------+
+
+
+suse
+)
+
+    sleep 2 > /dev/null
+            clear
+          Hackingtools=$(cat << "tools"
+
+    _  _  ___   ___  _  __ ___  _  _   ___ 
+    | || |/   \ / __|| |/ /|_ _|| \| | / __|
+    | __ || - || (__ |   <  | | | .  || (_ |
+    |_||_||_|_| \___||_|\_\|___||_|\_| \___| 
+    Github: github.com/suchsoak
+    BY: suchsoak
+    V:1.0.1
+tools
+)
+    echo "$Hackingtools"
+    sleep 3 > /dev/null
+    clear
+
+wpscan=$(cat << "scan"
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                      Version 3.8.25
+                               
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+scan
+)
+        echo "$wpscan"
+        sleep 2 > /dev/null
+        sudo zypper in -y ruby 
+        sudo gem update --system
+        sudo zypper in -y libxml2-2.10.4-3.fc39.x86_64 
+        sudo gem install wpscan
+        wpscan --update
+        clear
+        sudo zypper in -y git 
+        sudo zypper in -y make 
+        clear
+        sudo zypper in -y snapd
+        sudo zypper in -y update 
+        sudo zypper in -y  nmap 
+        sudo zypper in -y aircrack-ng 
+        sudo zypper in -y hydra 
+        sudo zypper in -y john 
+        sudo zypper in -y hashcat 
+        sudo zypper in -y proxychains-ng 
+        sudo zypper in -y tor 
+        git clone https://github.com/derv82/wifite2.git
+        clear
+        echo
+        echo -e "\e[31mWifite is installed with git, you just need to use: sudo ./wifite.py\e[0m"
+        echo
+        sleep 3 > /dev/null
+        clear
+        wireshark=$(cat << "shark"
+        +------------------------------+
+        |oooooooooooooooooooo++++++++++|
+        |oooooooooooooooo+++::+::::.::+|
+        |oooooooooooo+++++:::::.:.::.+o|
+        |oooooooooo++:++::..::.....:+oo|
+        |ooooooooo+:++:............+ooo|
+        |ooooooo++++::.:...........+ooo|
+        |ooooo++++::............ . oooo|
+        |oooo++++:::....... . .  . oooo|
+        |ooo+::+:........ .   .  ..+ooo|
+        |ooo+++:....... ..  .     .+ooo|
+        |oo+++::........ .         +ooo|
+        |o+:+:....... .            :ooo|
+        |++:+++++++++::::::.....:.::+oo|
+        |++++++++++++++++++++++:++:+:+o|
+        |+++++++++++++++++++++++++++++o|
+        +------------------------------+
+shark
+        )
+        echo -e "$wireshark"
+        sleep 2 > /dev/null
+        sudo zypper in -y wireshark 
+        git clone https://github.com/sqlmapproject/sqlmap.git
+        cd sqlmap
+        python3 sqlmap.py
+        echo
+        echo "Just Testing"
+        echo
+        sleep 3 > /dev/null
+        cd ..
+        clear
+        tor=$(cat << "tor1"
+                      . ..                        
+                 ... . .......~. ..               
+            ..... ... ...+==+=+:~.. ..            
+          .  ..  . . .  .~::++=o==+:~ . .         
+         . ..  .  .   .       ..~+=o=+.  .        
+       .  .   . .. .. ...~:~~..  ..~+o=+.  .      
+        .   .           .+===o+:..  .:=o=~  .     
+         .      .  .      ..~:=oo+. . ~=o=~       
+   .   .       .    .    .    .~=o=~   .=o=.  .   
+   .                    .+++~   .+oo~   ~oo:      
+         .               +ooo~   .oo+   .=o=.     
+                        .+ooo+    =o=    =o=      
+                        .+oo=:   .=o+   .=o+      
+                         ++:.   .+o=.   ~oo:      
+                               ~=o=~   .=o=.      
+                          ..~:=o=:.   .=o=.       
+                         :====+:.    ~=o=.        
+                         ~~..     .~+o=:          
+                               .~+===+.           
+                         ~~::+=o==+~              
+                         :=+++:~.  
+tor1
+)
+        echo "$tor"
+        sleep 2 > /dev/null
+        wget https://www.torproject.org/dist/torbrowser/13.0.1/tor-browser-linux-x86_64-13.0.1.tar.xz
+        tar -xf tor-browser-linux-x86_64-13.0.1.tar.xz
+        cd tor-browser
+        ./start-tor-browser.desktop
+        sleep 2 > /dev/null
+        cd ..
+        clear
+msfconsole=$(cat << "msf"
++--------------------------------------------------+
+|oooooooooooooooooooooooooooooooooooooooooooooooooo|
+|ooooooooooooooooooo+o++++++++++ooooooooooooooooooo|
+|oooooooooooo++:~~~               ~~::+oooooooooooo|
+|ooooooooooo:                          ~ooooooooooo|
+|oooo+oooooo~ ~oooo+~          :+o+o+  ~ooooooooooo|
+|ooooooooooo: ~oooooo+:      :+oooooo  :oooooooooo+|
+|ooooooooooo: ~ooooooooo: ~:ooooooooo  ~ooooo+ooooo|
+|ooooooooooo: ~oooo+oooooooooooo+oooo  :ooooooooooo|
+|ooooooooooo~ ~oooo~ :ooooooo+~ ~oooo  ~ooooooooooo|
+|o+ooooooooo: ~oooo~   :ooo+~   ~oooo  :ooooooooooo|
+|ooooooooooo: ~oooo~   ~oooo    :oooo  :ooooooooooo|
+|ooooooooooo: ~oooo~   ~ooo+    ~ooo+  ~ooooooo+ooo|
+|ooooooooooo:  oooo~   ~+++:    ~ooo+  :oo+oooooooo|
+|ooooooooooo+~ ~ooo~            ~oo+~ ~+ooooooooooo|
+|ooooooooooooo:  :o~            :o:  :+oooooooooooo|
+|oooo+oooooo+oo+:~~              ~ :+oooooooooooooo|
+|oooooooooooooooo+:~            ~:+ooooooooooooooo+|
+|ooooooooooooooooooo+:        ~+ooooooooooooooooooo|
+|oooooooooooooooooooooo:~  ~:++oooooooooooooooooooo|
+|oooooo+ooooooooooooooooo++oooooooooooooooooooooooo|
+|oooooooooooooooooooooooooooooooooooooooooooooo+ooo|
++--------------------------------------------------+
+msf
+)
+echo "$msfconsole"
+sleep 2 > /dev/null
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
+sleep 2 > /dev/null
+cd ..
+echo
+echo "All tools installed!! have good day hacker!!"
+echo
+
 else
     echo "Operating system not supported by this script."
 fi
