@@ -34,6 +34,4 @@ RUN apt-get install build-essential gcc g++ -y
 RUN apt-get install sudo -y
 RUN sudo apt-get update && sudo apt-get upgrade -y
 RUN python3 -m pip install --upgrade pip
-# EXPOSE 8080
-# ENTRYPOINT [ "apt-get", "install", "-y", "postgresql" ]
-RUN ifconfig
+CMD [ "ifconfig" ]
