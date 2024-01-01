@@ -1888,7 +1888,7 @@ tools
                                 
         @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
     _______________________________________________________________
-    scan
+scan
     )
             echo "$wpscan"
             sleep 2 > /dev/null
