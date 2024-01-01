@@ -37,3 +37,4 @@ RUN dnf install sudo -y
 RUN sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 RUN sudo dnf check-update
 RUN sudo dnf update -y
+CMD [ "iw" ]
