@@ -18,6 +18,7 @@
 !["Fedora"](https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white)
 !["Debian"](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
 !["Arch linux"](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
+!["OpenSUSE"](https://img.shields.io/badge/SUSE-0C322C?style=for-the-badge&logo=SUSE&logoColor=white)
 
 ## Install
 
@@ -44,22 +45,28 @@
 
 ## Docker
 
-**Arch Linux**
+`Arch Linux`
 
 ```sh
    pacman -Sy --noc && pacman -S sudo --noc && pacman -S git --noc && pacman -S nano --noc && sudo pacman -S lsb-release --noc && clear && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod +X script.sh && clear && bash script.sh
 ```
 
-**Ubuntu - Debian**
+`Ubuntu - Debian`
 
 ```sh
    apt update && apt install git -y && apt install sudo -y && sudo apt install lsb-release -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh
 ```
 
-**Fedora Linux**
+`Fedora Linux`
 
 ```sh
    dnf update -y && dnf install git -y && dnf install sudo -y && sudo dnf install redhat-lsb-core -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh  
+```
+
+`openSUSE`
+
+```sh
+   zypper update && zypper in -y git && zypper in -y sudo && sudo zypper in -y lsb-release && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh  
 ```
 
 ### **Dockerfile**
