@@ -489,6 +489,8 @@ opensuse=$(cat << "suse"
 suse
 )
 
+echo "$opensuse"
+
 sleep 3 > dev/null
 
 sudo zypper install -y make 
@@ -1727,6 +1729,7 @@ opensuse=$(cat << "suse"
 
 suse
 )
+echo "$opensuse"
 
 sleep 3 > /dev/null
 
@@ -2811,8 +2814,8 @@ cd ..
 
 suse
 )
-
-    sleep 2 > /dev/null
+    echo "$opensuse"
+    sleep 3 > /dev/null
           Hackingtools=$(cat << "tools"
 
     _  _  ___   ___  _  __ ___  _  _   ___ 
