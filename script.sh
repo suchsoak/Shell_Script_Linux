@@ -489,6 +489,7 @@ opensuse=$(cat << "suse"
 suse
 )
 
+sleep 3 > dev/null
 
 sudo zypper install -y make 
 sudo zypper install -y curl 
@@ -624,6 +625,10 @@ browser
         sudo zypper addrepo --refresh https://brave-browser-rpm-nightly.s3.brave.com/x86_64/ brave-browser-nightly
         sudo zypper in -y brave-browser
 
+     clear
+     echo
+     echo "Script Complet!"
+     echo
 
   elif [ "$(uname -o)" == "Android" ]; then
 clear
@@ -1723,6 +1728,8 @@ opensuse=$(cat << "suse"
 suse
 )
 
+sleep 3 > /dev/null
+
 
 sudo zypper install -y make 
 sudo zypper install -y curl 
@@ -1894,15 +1901,12 @@ scan
             sleep 2 > /dev/null
             sudo zypper in -y ruby 
             sudo gem update --system
-            sudo zypper in -y libxml2-2.10.4-3.fc39.x86_64 
             sudo gem install wpscan
             wpscan --update
             clear
             sudo zypper in -y git 
             sudo zypper in -y make 
             clear
-            sudo zypper in -y snapd
-            sudo zypper in -y update 
             sudo zypper in -y  nmap 
             sudo zypper in -y aircrack-ng 
             sudo zypper in -y hydra 
@@ -2013,6 +2017,7 @@ msf
     curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
     sleep 2 > /dev/null
     cd ..
+    clear
     echo
     echo "All tools installed!! have good day hacker!!"
     echo
@@ -2962,6 +2967,7 @@ sleep 2 > /dev/null
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
 sleep 2 > /dev/null
 cd ..
+clear
 echo
 echo "All tools installed!! have good day hacker!!"
 echo
