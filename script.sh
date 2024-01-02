@@ -1935,7 +1935,7 @@ scan
             |++++++++++++++++++++++:++:+:+o|
             |+++++++++++++++++++++++++++++o|
             +------------------------------+
-    shark
+shark
             )
             echo -e "$wireshark"
             sleep 2 > /dev/null
@@ -1971,7 +1971,7 @@ scan
                                 .~+===+.           
                             ~~::+=o==+~              
                             :=+++:~.  
-    tor1
+tor1
     )
             echo "$tor"
             sleep 2 > /dev/null
@@ -2006,7 +2006,7 @@ scan
     |oooooo+ooooooooooooooooo++oooooooooooooooooooooooo|
     |oooooooooooooooooooooooooooooooooooooooooooooo+ooo|
     +--------------------------------------------------+
-    msf
+msf
     )
     echo "$msfconsole"
     sleep 2 > /dev/null
@@ -2808,7 +2808,6 @@ suse
 )
 
     sleep 2 > /dev/null
-            clear
           Hackingtools=$(cat << "tools"
 
     _  _  ___   ___  _  __ ___  _  _   ___ 
