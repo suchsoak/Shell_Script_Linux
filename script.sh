@@ -684,17 +684,6 @@ droid
     pkg install mailutils -y
     pkg install nmh -y 
     pkg install tsduck-tools -y
-     clear
-      sleep 3 > /dev/null
-      clear
-        pkg install qemu-utils qemu-common qemu-system-x86_64-headless -y
-        mkdir alpine && cd alpine
-        wget http://dl-cdn.alpinelinux.org/alpine/v3.12/releases/x86_64/alpine-virt-3.12.3-x86_64.iso
-        qemu-img create -f qcow2 alpine.img 4G
-        qemu-system-x86_64 -machine q35 -m 1024 -smp cpus=2 -cpu qemu64 \
-        -drive if=pflash,format=raw,read-only,file=$PREFIX/share/qemu/edk2-x86_64-code.fd \
-        -netdev user,id=n1,hostfwd=tcp::2222-:22 -device virtio-net,netdev=n1 \
-        -cdrom alpine-virt-3.12.3-x86_64.iso -nographic alpine.img
     clear
 
     neofetch
@@ -750,6 +739,45 @@ droid
     sleep 3 > /dev/null
      pkg install postgresql -y
     clear
+
+    
+# alpine=$(cat << "alpine1"
+
+# You want install virtual alpine?
+
+# alpine1
+# )    
+
+# echo "$alpine1"
+
+# alpine2=0
+
+# while [[ $alpine2 -ne 1 && $alpine2 -ne 2 ]]
+
+# do
+#     read -p "Select an option [1-2]: " alpine2
+
+# done
+
+# case $alpine2 in 
+
+# 1)
+
+# clear
+# pkg install qemu-utils qemu-common qemu-system-x86_64-headless -y
+# mkdir alpine && cd alpine
+# wget http://dl-cdn.alpinelinux.org/alpine/v3.12/releases/x86_64/alpine-virt-3.12.3-x86_64.iso
+# qemu-img create -f qcow2 alpine.img 4G
+# qemu-system-x86_64 -machine q35 -m 1024 -smp cpus=2 -cpu qemu64 \
+# -drive if=pflash,format=raw,read-only,file=$PREFIX/share/qemu/edk2-x86_64-code.fd \
+# -netdev user,id=n1,hostfwd=tcp::2222-:22 -device virtio-net,netdev=n1 \
+# -cdrom alpine-virt-3.12.3-x86_64.iso -nographic alpine.img
+# ;;
+
+# 2)
+# echo "No install"
+# continue
+# ;;
 
 nethunter=$(cat << "EOF"        
       ...           
@@ -2162,15 +2190,7 @@ tools
     echo
     echo -e "\e[31mWifite is installed with git, you just need to use: sudo ./wifite.py\e[0m"
     echo
-    sleep 4 > /dev/null
-    pkg install qemu-utils qemu-common qemu-system-x86_64-headless -y
-    mkdir alpine && cd alpine
-    wget http://dl-cdn.alpinelinux.org/alpine/v3.12/releases/x86_64/alpine-virt-3.12.3-x86_64.iso
-    qemu-img create -f qcow2 alpine.img 4G
-    qemu-system-x86_64 -machine q35 -m 1024 -smp cpus=2 -cpu qemu64 \
-    -drive if=pflash,format=raw,read-only,file=$PREFIX/share/qemu/edk2-x86_64-code.fd \
-    -netdev user,id=n1,hostfwd=tcp::2222-:22 -device virtio-net,netdev=n1 \
-    -cdrom alpine-virt-3.12.3-x86_64.iso -nographic alpine.img
+    sleep 3 > /dev/null
 nethunter=$(cat << "EOF"
       ...           
    ...~:+o+        
@@ -2191,7 +2211,6 @@ EOF
 
 echo "$nethunter"
 
-# Declare op
 op=0
 
 while [[ $op -ne 1 && $op -ne 2 ]]
