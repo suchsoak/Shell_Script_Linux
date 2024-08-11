@@ -804,8 +804,6 @@ esac
     echo
     echo -e "\e[31mScript Complet!\e[0m"
     echo
-else
-    echo "Operating system not supported by this script."
 fi
     ;;
 
