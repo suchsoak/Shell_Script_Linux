@@ -64,7 +64,7 @@ echo
 echo Python
 echo
 sleep 3 > /dev/null
-sudo apt install python3 python-pip  -y
+sudo apt install python3 -y
 sudo apt install pip -y
 python -m pip install --upgrade pip
 
