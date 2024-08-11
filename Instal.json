@@ -1,0 +1,13 @@
+{ "Information": [
+
+    { "version": "1.0.3",
+      "Shell": "ps -p $$",
+      "name": "Shell_Script_Linux",
+      "file": "script.sh, script2.sh and script3.sh",
+      "libary": "lsb-release",
+      "github": "www.github.com/suchsoak",
+      "Author": "suchsoak"
+     }
+ ]
+ 
+ }
