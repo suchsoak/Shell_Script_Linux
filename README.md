@@ -5,10 +5,9 @@
 
 **This is a shell script for you to have everything when formatting your linux**
 >[!TIP]
->Before starting script recommended to update the system before
+>Before starting script recommended to `update` the system before
 
-**This script is under development**
-
+`This script is under development`
 
 # Linux
 !["Linux"](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
@@ -39,7 +38,8 @@
 ```
 
 > [!IMPORTANT]  
-> You need install lsb-release for work, see in requirements.txt
+> You need install `lsb-release` for work, see in requirements.txt.
+> https://github.com/suchsoak/Shell_Script_Linux/blob/main/requirements.txt
 > 
 > redhat-lsb-core (for fedora)
 
@@ -97,9 +97,7 @@ make
 !["Android"](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
 >  [!Note]
-> For termux i will use "uname"
-
-> Script for Termux still in development
+> For termux i will use `uname`
 
 ```sh
 elif [ "$(uname -o)" == "Android" ]; then
@@ -133,7 +131,7 @@ elif [ "$(uname -o)" == "Android" ]; then
 ## Usage
 
 ```sh
-  bash script.sh
+  bash ./script.sh
 ```
 
 # Packages | Programming language | Hacking tools
@@ -147,13 +145,13 @@ elif [ "$(uname -o)" == "Android" ]; then
   neofetch         | Python (pip)  | tor and tor broweser (Not for termux)
   inxi             | SQL           | hydra
   smartmontools    | Java          | proxychains
-  wireless_tools                   | host (Ubuntu and Debian)
+  wireless_tools   | Lua53         | host (Ubuntu and Debian)
   xdg-utils                        | mcrypt (Ubuntu, debian and fedora)
   lsb-release                      | wireshark, wireshark-qt and wireshark-cli for archlinux
   libwacom-bin                     | netcat
   libwacom-common                  | wpscan
   Docker or Docker.io              | metasploit
-  rpm (for fedora)                 | john  
+  rpm (for fedora)                 | john (Not for termux)
   iw (for fedora)
   java-latest-openjdk (for fedora)                  
   snap (Ubuntu, debian and fedora)
@@ -166,6 +164,7 @@ elif [ "$(uname -o)" == "Android" ]; then
   lvm2 (for termux)
   qemu-utils (for termux)
   mailutils (for termux)
+  yadara (for termux)
   Visual Code studio
   Brave Browser
 ```
