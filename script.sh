@@ -103,7 +103,7 @@ echo
 echo Python
 echo
 sleep 3 > /dev/null
-sudo apt install python3 python-pip  -y
+sudo apt install python3 -y
 sudo apt install pip -y
 python -m pip install --upgrade pip
 
@@ -822,7 +822,3 @@ cd hacking/ && chmod 777 script3.sh && bash ./script3.sh
 git pull
 
 esac
-
-else
-    echo "Operating system not supported by this script."
-fi
