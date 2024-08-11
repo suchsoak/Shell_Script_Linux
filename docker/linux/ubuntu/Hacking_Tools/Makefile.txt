@@ -1,0 +1,3 @@
+tools:
+	sudo docker build -f tools.Dockerfile -t hacking1 .
+	sudo docker run -it hacking1
