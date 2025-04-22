@@ -7,7 +7,7 @@
 
 !["Shell"](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
-# What's PACKSCRIPT?
+# What is PACKSCRIPT?
 
 PACKSCRIPT is a Shell Script for you to have everything when formatting your Linux or for fun.
 
