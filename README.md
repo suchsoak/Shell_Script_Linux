@@ -4,8 +4,9 @@
 
 <img alt="PACKSCRIPT LOGO" src="https://github.com/suchsoak/Shell_Script_Linux/blob/main/PACKSCRIPT.png"></img>
 
-
-!["Shell"](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
+> [!IMPORTANT]  
+> You need install `lsb-release or redhat-lsb-core (for fedora)` for work, see in requirements.txt.
+> https://github.com/suchsoak/Shell_Script_Linux/blob/main/requirements.txt
 
 # What is PACKSCRIPT?
 
@@ -43,12 +44,6 @@ PACKSCRIPT is a Shell Script for you to have everything when formatting your Lin
 ```sh
  chmod 777 script.sh 
 ```
-
-> [!IMPORTANT]  
-> You need install `lsb-release` for work, see in requirements.txt.
-> https://github.com/suchsoak/Shell_Script_Linux/blob/main/requirements.txt
-> 
-> redhat-lsb-core (for fedora)
 
 ## Docker
 
