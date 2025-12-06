@@ -1,74 +1,70 @@
 
-# PACKSCRIPT
-
+# PACKSCRIPT 🚀
 
 <img alt="PACKSCRIPT LOGO" src="https://github.com/suchsoak/Shell_Script_Linux/blob/main/PACKSCRIPT.png"></img>
 
 > [!IMPORTANT]  
-> You need install `lsb-release or redhat-lsb-core (for fedora)` for work, see in requirements.txt.
-> https://github.com/suchsoak/Shell_Script_Linux/blob/main/requirements.txt
+> You need to install `lsb-release or redhat-lsb-core (for Fedora)` to work. See requirements in [requirements.txt](https://github.com/suchsoak/Shell_Script_Linux/blob/main/requirements.txt).
 
-# What is PACKSCRIPT?
+## What is PACKSCRIPT? 🤔
 
-PACKSCRIPT is a Shell Script for you to have everything when formatting your Linux or for fun.
+PACKSCRIPT is a Shell Script designed to help you set up everything when formatting your Linux system or just for fun!
 
->[!TIP]
->Before starting script recommended to `update` the system before
+> [!TIP]
+> Before starting the script, it's recommended to `update` your system.
 
 `This script is under development`
 
-# Linux
-!["Linux"](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-!["Ubuntu"](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
-!["LinuxMint"](https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the-badge&logo=linux-mint&logoColor=white)
-!["Kali linux"](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
-!["Fedora"](https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white)
-!["Debian"](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
-!["Arch linux"](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
-!["OpenSUSE"](https://img.shields.io/badge/SUSE-0C322C?style=for-the-badge&logo=SUSE&logoColor=white)
+## Supported Linux Distributions 🐧
 
-## Install
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![LinuxMint](https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the-badge&logo=linux-mint&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
+![Fedora](https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white)
+![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
+![OpenSUSE](https://img.shields.io/badge/SUSE-0C322C?style=for-the-badge&logo=SUSE&logoColor=white)
 
-> With Git
+## Installation 🛠️
 
-```sh
-  git clone https://github.com/suchsoak/Shell_Script_Linux.git
-```
+### With Git
 
 ```sh
-  chmod +X script.sh  
+git clone https://github.com/suchsoak/Shell_Script_Linux.git
+chmod +X script.sh  
 ```
 
 ### OR
 
 ```sh
- chmod 777 script.sh 
+chmod 777 script.sh 
 ```
 
-## Docker
+## Docker 🐳
 
-`Arch Linux`
+### Arch Linux
 
 ```sh
-   pacman -Sy --noc && pacman -S sudo --noc && pacman -S git --noc && pacman -S nano --noc && sudo pacman -S lsb-release --noc && clear && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod +X script.sh && clear && bash script.sh
+pacman -Sy --noc && pacman -S sudo --noc && pacman -S git --noc && pacman -S nano --noc && sudo pacman -S lsb-release --noc && clear && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod +X script.sh && clear && bash script.sh
 ```
 
-`Ubuntu - Debian - Kali Linux - Linux Mint`
+### Ubuntu / Debian / Kali Linux / Linux Mint
 
 ```sh
-   apt update && apt install git -y && apt install sudo -y && sudo apt install lsb-release -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh
+apt update && apt install git -y && apt install sudo -y && sudo apt install lsb-release -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh
 ```
 
-`Fedora Linux`
+### Fedora Linux
 
 ```sh
-   dnf update -y && dnf install git -y && dnf install sudo -y && sudo dnf install redhat-lsb-core -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh  
+dnf update -y && dnf install git -y && dnf install sudo -y && sudo dnf install redhat-lsb-core -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh  
 ```
 
-`openSUSE`
+### openSUSE
 
 ```sh
-   zypper update && zypper in -y git && zypper in -y sudo && sudo zypper in -y lsb-release && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh  
+zypper update && zypper in -y git && zypper in -y sudo && sudo zypper in -y lsb-release && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh  
 ```
 
 ### **Dockerfile**
@@ -76,30 +72,27 @@ PACKSCRIPT is a Shell Script for you to have everything when formatting your Lin
 ### Usage
 
 ```sh
-
-  sudo docker build -f < Distro >.Dockerfile -t < Distro_name > .
-
+sudo docker build -f <Distro>.Dockerfile -t <Distro_name> .
 ```
+
 **or**
 
 With `Makefile`
 
 ```sh
-
 make
-
 ```
 
-| Dockerfiles |  Links |
-| ------ | ------ |
-| Dockerfile | https://github.com/suchsoak/Shell_Script_Linux/tree/main/docker/linux
+| Dockerfiles | Links |
+| ----------- | ----- |
+| Dockerfile  | [Link](https://github.com/suchsoak/Shell_Script_Linux/tree/main/docker/linux) |
 
-# Termux
+## Termux 📱
 
-!["Android"](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
->  [!Note]
-> For termux i will use `uname`
+> [!Note]
+> For Termux, use `uname`.
 
 ```sh
 elif [ "$(uname -o)" == "Android" ]; then
@@ -122,69 +115,68 @@ elif [ "$(uname -o)" == "Android" ]; then
 
     [1] Nethunter Install
     [2] No Install 
-
 ```
 
-| Details |  Link |
-| ------ | ------ |
-| Kali Nethunter | https://github.com/suchsoak/Shell_Script_Linux/releases/tag/V.1.0.0
+| Details         | Link |
+| --------------- | ---- |
+| Kali Nethunter  | [Link](https://github.com/suchsoak/Shell_Script_Linux/releases/tag/V.1.0.0) |
 
-
-## Usage
+## Usage 🖥️
 
 ```sh
-  bash ./script.sh
+bash ./script.sh
 ```
 
-# Packages | Programming language | Hacking tools
+## Packages | Programming Language | Hacking Tools 🛡️
 
 ```sh            
-  curl             | Ruby (gem)    | nmap
-  wget             | Lua           | aircrack-ng
-  git              | gcc           | wifite
-  vim              | g++           | sqlmap
-  net-tools        | Nodejs        | dnsrecon
-  neofetch         | Python (pip)  | tor and tor broweser (Not for termux)
-  inxi             | SQL           | hydra
-  smartmontools    | Java          | proxychains
-  wireless_tools   | Lua53         | host (Ubuntu and Debian)
-  xdg-utils                        | mcrypt (Ubuntu, debian and fedora)
-  lsb-release                      | wireshark, wireshark-qt and wireshark-cli for archlinux
-  libwacom-bin                     | netcat
-  libwacom-common                  | wpscan
-  Docker or Docker.io              | metasploit
-  rpm (for fedora)                 | john (Not for termux)
-  iw (for fedora)
-  java-latest-openjdk (for fedora)                  
-  snap (Ubuntu, debian and fedora)
-  htop
-  qemu-utils (for termux)
-  openjdk-17 (for termux)
-  libcap-ng (for termux)
-  nmh (for termux)
-  tsduck-tools (for termux)
-  lvm2 (for termux)
-  qemu-utils (for termux)
-  mailutils (for termux)
-  yadara (for termux)
-  Visual Code studio
-  Brave Browser
+curl             | Ruby (gem)    | nmap
+wget             | Lua           | aircrack-ng
+git              | gcc           | wifite
+vim              | g++           | sqlmap
+net-tools        | Nodejs        | dnsrecon
+neofetch         | Python (pip)  | tor and tor browser (Not for Termux)
+inxi             | SQL           | hydra
+smartmontools    | Java          | proxychains
+wireless_tools   | Lua53         | host (Ubuntu and Debian)
+xdg-utils                        | mcrypt (Ubuntu, Debian, and Fedora)
+lsb-release                      | wireshark, wireshark-qt, and wireshark-cli for Arch Linux
+libwacom-bin                     | netcat
+libwacom-common                  | wpscan
+Docker or Docker.io              | metasploit
+rpm (for Fedora)                 | john (Not for Termux)
+iw (for Fedora)
+java-latest-openjdk (for Fedora)                  
+snap (Ubuntu, Debian, and Fedora)
+htop
+qemu-utils (for Termux)
+openjdk-17 (for Termux)
+libcap-ng (for Termux)
+nmh (for Termux)
+tsduck-tools (for Termux)
+lvm2 (for Termux)
+qemu-utils (for Termux)
+mailutils (for Termux)
+yadara (for Termux)
+Visual Studio Code
+Brave Browser
 ```
 
-| Downloads |  Links |
-| ------ | ------ |
-| VISUAL CODE STUDIO | https://code.visualstudio.com/
-| BRAVE BROWSER | https://brave.com/pt-br/download/
-|  Python | https://www.python.org/
-|  Ruby | https://www.ruby-lang.org/en/
-|  Lua | https://www.lua.org/download.html
-|  nodejs | https://nodejs.org/en
-| Mysql   | https://www.mysql.com/
-| Docker   | https://www.docker.com/
-| RPM   | https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/RPM/
-| lsb-release  | https://www.howtogeek.com/691214/how-to-check-the-linux-kernel-and-operating-system-version/ or https://manpages.debian.org/bullseye/lsb-release/lsb_release.1.en.html
-| Kali Nethunter   | https://www.kali.org/docs/nethunter/nethunter-rootless/
-| Hacking Tools   | https://github.com/suchsoak/Shell_Script_Linux/releases/tag/V.1.0.1
+| Downloads               | Links |
+| ----------------------- | ----- |
+| VISUAL STUDIO CODE      | [Visual Studio Code](https://code.visualstudio.com/) |
+| BRAVE BROWSER           | [Brave](https://brave.com/pt-br/download/) |
+| Python                  | [Python](https://www.python.org/) |
+| Ruby                    | [Ruby](https://www.ruby-lang.org/en/) |
+| Lua                     | [Lua](https://www.lua.org/download.html) |
+| Node.js                 | [Node](https://nodejs.org/en) |
+| MySQL                   | [MySQL](https://www.mysql.com/) |
+| Docker                  | [Docker](https://www.docker.com/) |
+| RPM                     | [RPM](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/RPM/) |
+| lsb-release             | [LSB](https://www.howtogeek.com/691214/how-to-check-the-linux-kernel-and-operating-system-version/) |
+| Kali Nethunter          | [Kali_Linux](https://www.kali.org/docs/nethunter/nethunter-rootless/) |
+| Hacking Tools           | [Hacking_Tools](https://github.com/suchsoak/Shell_Script_Linux/releases/tag/V.1.0.1) |
 
-# License & Copyright
+## License & Copyright 📜
 `BSD 3-Clause "New" or "Revised" License`
+
