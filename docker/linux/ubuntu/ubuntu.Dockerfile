@@ -1,35 +1,48 @@
-FROM ubuntu
-LABEL maintainer "BY: suchsoak"
-LABEL maintainer "V.1.0.0"
-RUN apt-get update && apt-get upgrade -y
-RUN dpkg --configure -a
-RUN apt-get update && apt-get install -y \
-    make \
-    curl \
-    wget \
-    git \
-    vim \
-    htop \
-    net-tools \
-    ssh \
-    inxi \
-    tar \
-    smartmontools \
-    snap \
-    build-essential \ 
-    gcc \
-    pip \
-    nano \
-    default-jdk \
-    default-jre  \
-    ruby \
-    python3 \
-    lsb-release \
-    mysql-server \
-    apache2 \
-    nginx   
-RUN apt-get install -y build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev  libgmp-dev zlib1g-dev
-RUN apt-get install build-essential gcc g++ -y
-RUN apt-get install sudo -y
-RUN sudo apt-get update && sudo apt-get upgrade -y
-CMD [ "ifconfig" ]
+FROM ubuntu:24.04
+
+LABEL maintainer="suchsoak" \
+      version="1.0.0" \
+      org.opencontainers.image.title="PackScript Ubuntu" \
+      org.opencontainers.image.description="Ubuntu development and system utilities container"
+
+ENV LANG=C.UTF-8
+
+# Keep service packages installed without trying to start daemons during image builds.
+RUN printf '#!/bin/sh\nexit 101\n' > /usr/sbin/policy-rc.d \
+    && chmod +x /usr/sbin/policy-rc.d \
+    && apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        apache2 \
+        build-essential \
+        curl \
+        default-jdk \
+        gcc \
+        git \
+        htop \
+        inxi \
+        libcurl4-openssl-dev \
+        libgmp-dev \
+        libxml2-dev \
+        libxslt1-dev \
+        lsb-release \
+        make \
+        mysql-server \
+        nano \
+        net-tools \
+        nginx \
+        openssh-client \
+        python3 \
+        python3-pip \
+        ruby \
+        ruby-dev \
+        smartmontools \
+        sudo \
+        tar \
+        vim \
+        wget \
+        zlib1g-dev \
+    && rm -f /usr/sbin/policy-rc.d \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+CMD ["bash"]
