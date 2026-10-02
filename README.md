@@ -151,7 +151,6 @@ This ensures the shell scripts are syntactically valid before execution.
 
 ## 🌐 Useful links
 
-- [NOVA_VERSAO.md](NOVA_VERSAO.md)
 - [requirements.txt](requirements.txt)
 - [script.sh](script.sh)
 - [hacking/script2.sh](hacking/script2.sh)
