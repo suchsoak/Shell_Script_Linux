@@ -1,182 +1,173 @@
-
 # PACKSCRIPT 🚀
+
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=900&color=00D4FF&center=true&vCenter=true&width=700&lines=PACKSCRIPT+%F0%9F%9A%80;Linux+Setup+Automation;Security+Tools+Installer;Modern+Support+for+Debian%2C+Fedora%2C+Arch%2C+openSUSE" alt="PACKSCRIPT banner" />
+</div>
 
 <img alt="PACKSCRIPT LOGO" src="https://github.com/suchsoak/Shell_Script_Linux/blob/main/PACKSCRIPT.png"></img>
 
-> [!IMPORTANT]  
-> You need to install `lsb-release or redhat-lsb-core (for Fedora)` to work. See requirements in [requirements.txt](https://github.com/suchsoak/Shell_Script_Linux/blob/main/requirements.txt).
+> [!IMPORTANT]
+> This project has been modernized and rewritten for current Linux systems. The latest version is faster, cleaner, safer, and more maintainable than the earlier script.
 
 ## What is PACKSCRIPT? 🤔
 
-PACKSCRIPT is a Shell Script designed to help you set up everything when formatting your Linux system or just for fun!
+PACKSCRIPT is a Bash-based setup tool that helps you install development tools, system utilities, optional apps, and security tools in a quick and structured way.
 
-> [!TIP]
-> Before starting the script, it's recommended to `update` your system.
+It supports multiple popular Linux distributions and is designed to simplify post-installation setup after formatting or rebuilding a machine.
 
-`This script is under development`
+---
 
-## Supported Linux Distributions 🐧
+## ✨ New version highlights
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
-![LinuxMint](https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the-badge&logo=linux-mint&logoColor=white)
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
-![Fedora](https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white)
-![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
-![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
-![OpenSUSE](https://img.shields.io/badge/SUSE-0C322C?style=for-the-badge&logo=SUSE&logoColor=white)
+The current version includes:
 
-## Installation 🛠️
+- better Bash structure and strict error handling;
+- centralized package-manager logic;
+- cleaner distro detection;
+- support for current Linux distributions;
+- improved installation flow for common apps;
+- optional installation of Google Chrome and Spotify;
+- Android/Termux support with Nethunter option;
+- better messages, warnings, and finish status.
 
-### With Git
+For the full technical change log and architecture notes, see [NOVA_VERSAO.md](NOVA_VERSAO.md).
 
-```sh
+---
+
+## 🐧 Supported systems
+
+- Ubuntu
+- Debian
+- Linux Mint
+- Kali Linux
+- Fedora
+- Arch Linux
+- openSUSE
+- Android / Termux
+
+---
+
+## ⚡ Quick start
+
+### 1) Clone the repository
+
+```bash
 git clone https://github.com/suchsoak/Shell_Script_Linux.git
-chmod +X script.sh  
+cd Shell_Script_Linux
 ```
 
-### OR
+### 2) Give execution permission
 
-```sh
-chmod 777 script.sh 
+```bash
+chmod +x script.sh
 ```
 
-## Docker 🐳
+### 3) Run it
 
-### Arch Linux
-
-```sh
-pacman -Sy --noc && pacman -S sudo --noc && pacman -S git --noc && pacman -S nano --noc && sudo pacman -S lsb-release --noc && clear && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod +X script.sh && clear && bash script.sh
-```
-
-### Ubuntu / Debian / Kali Linux / Linux Mint
-
-```sh
-apt update && apt install git -y && apt install sudo -y && sudo apt install lsb-release -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh
-```
-
-### Fedora Linux
-
-```sh
-dnf update -y && dnf install git -y && dnf install sudo -y && sudo dnf install redhat-lsb-core -y && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh  
-```
-
-### openSUSE
-
-```sh
-zypper update && zypper in -y git && zypper in -y sudo && sudo zypper in -y lsb-release && git clone https://github.com/suchsoak/Shell_Script_Linux.git && cd Shell_Script_Linux && chmod 777 script.sh && clear && bash ./script.sh  
-```
-
-### **Dockerfile**
-
-### Usage
-
-```sh
-sudo docker build -f <Distro>.Dockerfile -t <Distro_name> .
-```
-
-**or**
-
-With `Makefile`
-
-```sh
-make
-```
-
-| Dockerfiles | Links |
-| ----------- | ----- |
-| Dockerfile  | [Link](https://github.com/suchsoak/Shell_Script_Linux/tree/main/docker/linux) |
-
-## Termux 📱
-
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-
-> [!Note]
-> For Termux, use `uname`.
-
-```sh
-elif [ "$(uname -o)" == "Android" ]; then
-```
-
-### Kali Nethunter
-
-```sh
-      ...           
-   ...~:+o+        
-    ......++::::    
-         ~o    :+   
-          +:::::.   
-              ~:~  
-                 .  
- _ __ ____  __    ___                             
-| |/ //   \| |   |_ _|       
-|   < | - || |__ |   |       
-|_|\_\|_|_||____||___|   
-
-    [1] Nethunter Install
-    [2] No Install 
-```
-
-| Details         | Link |
-| --------------- | ---- |
-| Kali Nethunter  | [Link](https://github.com/suchsoak/Shell_Script_Linux/releases/tag/V.1.0.0) |
-
-## Usage 🖥️
-
-```sh
+```bash
 bash ./script.sh
 ```
 
-## Packages | Programming Language | Hacking Tools 🛡️
+---
 
-```sh            
-curl             | Ruby (gem)    | nmap
-wget             | Lua           | aircrack-ng
-git              | gcc           | wifite
-vim              | g++           | sqlmap
-net-tools        | Nodejs        | dnsrecon
-neofetch         | Python (pip)  | tor and tor browser (Not for Termux)
-inxi             | SQL           | hydra
-smartmontools    | Java          | proxychains
-wireless_tools   | Lua53         | host (Ubuntu and Debian)
-xdg-utils                        | mcrypt (Ubuntu, Debian, and Fedora)
-lsb-release                      | wireshark, wireshark-qt, and wireshark-cli for Arch Linux
-libwacom-bin                     | netcat
-libwacom-common                  | wpscan
-Docker or Docker.io              | metasploit
-rpm (for Fedora)                 | john (Not for Termux)
-iw (for Fedora)
-java-latest-openjdk (for Fedora)                  
-snap (Ubuntu, Debian, and Fedora)
-htop
-qemu-utils (for Termux)
-openjdk-17 (for Termux)
-libcap-ng (for Termux)
-nmh (for Termux)
-tsduck-tools (for Termux)
-lvm2 (for Termux)
-qemu-utils (for Termux)
-mailutils (for Termux)
-yadara (for Termux)
-Visual Studio Code
-Brave Browser
+## 🛠️ Menu options
+
+The script presents a simple interactive menu:
+
+- Normal packages
+- Normal packages + hacking tools
+- Only hacking tools
+- Update repository
+
+It also asks whether you want to install optional tools like Google Chrome and Spotify.
+
+---
+
+## 📦 Included package groups
+
+### Base environment
+
+- curl
+- wget
+- git
+- vim
+- htop
+- neofetch
+- inxi
+- docker
+- python
+- python-pip
+- ruby
+- nodejs
+- Java runtime
+- MySQL/PostgreSQL support
+- development tools
+
+### Hacking/security tools
+
+- nmap
+- aircrack-ng
+- hydra
+- tcpdump
+- sqlmap
+- john
+- hashcat
+- wireshark
+- nikto
+- dnsrecon
+- proxychains
+- tor
+- netcat
+
+### Optional software
+
+- Google Chrome
+- Spotify
+- Nethunter on Termux
+
+---
+
+## 🧠 Why this version is better
+
+The older script had repeated blocks and fragile logic due to copy-paste patterns across multiple distro branches. The new version solves that by:
+
+- centralizing package installation logic;
+- keeping distro-specific logic in a single place;
+- reducing shell syntax errors;
+- improving maintainability;
+- adding support for modern package managers and newer Linux versions.
+
+---
+
+## 🧪 Validation status
+
+The scripts are validated with Bash syntax checking:
+
+```bash
+bash -n script.sh hacking/script2.sh hacking/script3.sh
 ```
 
-| Downloads               | Links |
-| ----------------------- | ----- |
-| VISUAL STUDIO CODE      | [Visual Studio Code](https://code.visualstudio.com/) |
-| BRAVE BROWSER           | [Brave](https://brave.com/pt-br/download/) |
-| Python                  | [Python](https://www.python.org/) |
-| Ruby                    | [Ruby](https://www.ruby-lang.org/en/) |
-| Lua                     | [Lua](https://www.lua.org/download.html) |
-| Node.js                 | [Node](https://nodejs.org/en) |
-| MySQL                   | [MySQL](https://www.mysql.com/) |
-| Docker                  | [Docker](https://www.docker.com/) |
-| RPM                     | [RPM](https://docs.fedoraproject.org/en-US/fedora/latest/system-administrators-guide/RPM/) |
-| lsb-release             | [LSB](https://www.howtogeek.com/691214/how-to-check-the-linux-kernel-and-operating-system-version/) |
-| Kali Nethunter          | [Kali_Linux](https://www.kali.org/docs/nethunter/nethunter-rootless/) |
-| Hacking Tools           | [Hacking_Tools](https://github.com/suchsoak/Shell_Script_Linux/releases/tag/V.1.0.1) |
+This ensures the shell scripts are syntactically valid before execution.
 
-## License & Copyright 📜
-`BSD 3-Clause "New" or "Revised" License`
+---
+
+## 🌐 Useful links
+
+- [NOVA_VERSAO.md](NOVA_VERSAO.md)
+- [requirements.txt](requirements.txt)
+- [script.sh](script.sh)
+- [hacking/script2.sh](hacking/script2.sh)
+- [hacking/script3.sh](hacking/script3.sh)
+
+---
+
+## 📜 License
+
+BSD 3-Clause "New" or "Revised" License
+
+---
+
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=1000&color=7CFF6B&center=true&vCenter=true&width=650&lines=Ready+to+install+and+configure;Linux+with+style;Automation+made+easy" alt="Final banner" />
+</div>
 
