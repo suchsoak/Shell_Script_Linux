@@ -32,5 +32,4 @@ RUN apt-get install -y build-essential libcurl4-openssl-dev libxml2 libxml2-dev 
 RUN apt-get install build-essential gcc g++ -y
 RUN apt-get install sudo -y
 RUN sudo apt-get update && sudo apt-get upgrade -y
-RUN python3 -m pip install --upgrade pip
 CMD [ "ifconfig" ]
