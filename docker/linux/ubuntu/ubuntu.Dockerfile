@@ -12,7 +12,6 @@ RUN apt-get update && apt-get install -y \
     htop \
     net-tools \
     ssh \
-    neofetch \
     inxi \
     tar \
     smartmontools \
