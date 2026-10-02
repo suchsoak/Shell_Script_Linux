@@ -30,8 +30,6 @@ The current version includes:
 - Android/Termux support with Nethunter option;
 - better messages, warnings, and finish status.
 
-For the full technical change log and architecture notes, see [NOVA_VERSAO.md](NOVA_VERSAO.md).
-
 ---
 
 ## 🐧 Supported systems
