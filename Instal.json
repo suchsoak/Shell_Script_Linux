@@ -1,13 +1,56 @@
-{ "Information": [
-
-    { "version": "1.0.3",
-      "Shell": "ps -p $$",
-      "name": "Shell_Script_Linux",
-      "file": "script.sh, script2.sh and script3.sh",
-      "libary": "lsb-release",
-      "github": "www.github.com/suchsoak",
-      "Author": "suchsoak"
-     }
- ]
- 
- }
+{
+  "project": "PackScript",
+  "version": "1.0.4",
+  "description": "Linux setup automation for development tools, system utilities, and security tools.",
+  "platform": "Linux",
+  "supported_distributions": [
+    "Debian",
+    "Ubuntu",
+    "Linux Mint",
+    "Kali Linux",
+    "Raspberry Pi OS",
+    "Fedora",
+    "RHEL",
+    "CentOS",
+    "Rocky Linux",
+    "AlmaLinux",
+    "Arch Linux",
+    "Manjaro",
+    "openSUSE",
+    "SUSE Linux Enterprise"
+  ],
+  "package_managers": [
+    "apt",
+    "dnf",
+    "pacman",
+    "zypper",
+    "pkg"
+  ],
+  "files": [
+    "script.sh",
+    "hacking/script2.sh",
+    "hacking/script3.sh"
+  ],
+  "features": [
+    "Distribution detection",
+    "Recoverable error handling",
+    "Package installation verification",
+    "Programming language runtime checks",
+    "Optional Google Chrome installation",
+    "Optional Spotify installation",
+    "Android/Termux Nethunter setup"
+  ],
+  "programming_languages_checked": [
+    "C",
+    "C++",
+    "Java",
+    "Lua",
+    "Node.js",
+    "Python",
+    "Ruby"
+  ],
+  "library": "lsb-release",
+  "repository": "https://github.com/suchsoak/Shell_Script_Linux",
+  "author": "suchsoak",
+  "updated": "2026-10-01"
+}
